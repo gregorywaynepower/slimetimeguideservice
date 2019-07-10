@@ -1,0 +1,55 @@
+@import "reset";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&display=swap');
+$backgroundcolor: rgb(17, 27, 19);
+$menu: rgb(17, 27, 19);
+$menubutton: #2cd816;
+$headercolor: #2cd816;
+$subtextcolor: #21be0c;
+
+
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html{
+  body{
+    background: $backgroundcolor;
+    .menu{
+      font-size: 1.1em;
+      text-transform: uppercase;
+      background-color: rgba(46, 228, 55, 0.8);
+      color: $headercolor;
+      ul{
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        li{
+          display: inline-block;
+          a{
+            display: inline-block;
+            padding: .5em;
+            margin: .5em .25em;
+            background:  rgba(25, 119, 30, 0.8);
+            color: yellow;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+    header{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a{
+        color: $headercolor;
+        text-decoration: none;
+      }
+      img{
+        width: 40%;
+      }
+    }
+  }
+}
