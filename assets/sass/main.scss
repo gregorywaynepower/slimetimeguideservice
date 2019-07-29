@@ -1,4 +1,5 @@
 @import "reset";
+@import "about";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&display=swap');
 $backgroundcolor: rgb(17, 27, 19);
 $menu: rgb(17, 27, 19);
@@ -10,131 +11,103 @@ $subtextcolor: #21be0c;
 *{
   box-sizing: border-box;
   text-decoration: none;
+  // max-width:
 }
 html{
   body{
     background: $backgroundcolor;
-    .menu{
-      font-size: 1.1em;
-      text-transform: uppercase;
-      background-color: rgba(46, 228, 55, 0.8);
-      color: $headercolor;
-      ul{
-        display: block;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        li{
-          display: inline-block;
-          a{
-            display: inline-block;
-            padding: .5em;
-            margin: .5em .25em;
-            background:  rgba(25, 119, 30, 0.8);
-            color: yellow;
-            border-radius: 3px;
-          }
+    header{
+      display: flex;
+      padding: 20px;
+      justify-content: space-between;
+      .logo{
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: white;
+        display: flex;
+      }
+      .header-menu{
+        font-size: 1rem;
+        text-decoration: none;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        a{
+          font-size: 1rem;
+          text-decoration: none;
+          color: $subtextcolor;
+          padding: 0 10px 0;
+          font-weight: 700;
+          border-radius: 1px;
+          transition: color 0.3s ease-in-out;
+        }
+        a:hover{
+          font-weight: 700;
+          color: rgb(237, 242, 245);
         }
       }
+      .menu-btn{
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        font-size: 2rem;
+        display: none;
+        cursor: pointer;
+      }
     }
-    header{
-      width: 100%;
+    .mobile-menu{
+      display: none;
+      background: black;
+      flex-direction: column;
+      padding: 15px;
+      position: absolute;
+      top: 0;
+      height: 100vh;
+      width: 50%;
+      z-index: 10;
+      transform: translate3d(-100%, 0, 0);
+      transition: all 0.4s ease-in-out;
+      a{
+        padding: 15px;
+        text-decoration: none;
+        color: black;
+        transition: all 0.1s ease-in-out;
+      }
+      a:hover{
+        text-decoration: none;
+        color: rgb(237, 242, 245);
+      }
+    }
+    .mobile-menu.active{
+      transform: translate3d(0, 0, 0);
+      -webkit-box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
+      -moz-box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
+      box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
+    }
+    .title{
       display: flex;
       justify-content: center;
-      align-items: center;
+      padding: 20px;
+      font-size: 2rem;
       a{
         color: $headercolor;
-        text-decoration: none;
       }
       img{
-        width: 40%;
+        display: flex;
+        justify-content: center;
+        padding: 35px;
+        width: 20%;
+        height: auto;
       }
     }
   }
 }
-header{
-  display: flex;
-  padding: 20px;
-  justify-content: space-between;
-  .logo{
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: capitalize;
-    color: white;
-    display: flex;
-    .name{
-      background: black;
-      padding: 15px 20px;
-      text-decoration: none;
-      color: white;
-    }
-  }
-  .header-menu{
-    font-size: 1rem;
-    text-decoration: none;
-    text-transform: capitalize;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    a{
-      font-size: 1rem;
-      text-decoration: none;
-      color: black;
-      padding: 0 10px 0;
-      font-weight: 700;
-      border-radius: 1px;
-      transition: color 0.3s ease-in-out;
-      transition: background 0.1s ease-in-out;
-    }
-    a:hover{
-      font-weight: 700;
-      color: rgb(237, 242, 245);
-      background: rgba(92, 92, 92, 0.534);
-    }
-  }
-  .menu-btn{
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    font-size: 2rem;
-    display: none;
-    cursor: pointer;
-  }
-}
-.mobile-menu{
-  display: none;
-  background: white;
-  flex-direction: column;
-  padding: 15px;
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 50%;
-  z-index: 10;
-  transform: translate3d(-100%, 0, 0);
-  transition: all 0.4s ease-in-out;
-  a{
-    padding: 15px;
-    text-decoration: none;
-    color: black;
-    transition: all 0.1s ease-in-out;
-  }
-  a:hover{
-    text-decoration: none;
-    color: rgb(237, 242, 245);
-    background: rgba(92, 92, 92, 0.534)
-  }
-}
-.mobile-menu.active{
-  transform: translate3d(0, 0, 0);
-  -webkit-box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
-  -moz-box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
-  box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
-}
 
 //Breakpoints Researched from Bulma.io (https://bulma.io/documentation/overview/responsiveness/)
 
