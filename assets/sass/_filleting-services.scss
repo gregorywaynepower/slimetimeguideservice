@@ -1,0 +1,57 @@
+
+$backgroundcolor: rgb(17, 27, 19);
+$menu: rgb(17, 27, 19);
+$menubutton: #2cd816;
+$headercolor: #2cd816;
+$subtextcolor: #21be0c;
+$boxcolor: black;
+
+html{
+    body{
+        #filleting-services{
+            display: flex;
+            justify-content: center;
+            margin: 10%;
+            .container{
+                margin-top: 25px;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-gap: 0px;
+                .text-box{
+                    display: flex;
+                    flex-direction: column;
+                    background: $boxcolor;
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    h1{
+                        font-size: 1.25rem;
+                        padding: 10px;
+                        color: $headercolor;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        text-align: justify;
+                        text-justify: inter-word;    
+                        font-size: 80%;
+                        padding: 0px 10px 10px;
+                        color: $subtextcolor;
+                        line-height: 1.2;
+                    }
+                }
+                .img-box{
+                    padding: 5px;
+                    background: black;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        } 
+    }
+}  

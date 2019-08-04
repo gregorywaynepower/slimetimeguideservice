@@ -3,45 +3,63 @@
   <head>
     <meta charset="utf-8">
     <title>Slime Time Guide Service</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <script src="https://kit.fontawesome.com/32fecf8e5c.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
   <body>
-      <script src="./js/components/vendor.js"></script>
-      <script src="./js/components/FirstComp.js"></script>
-      <script src="./js/components/SecondComp.js"></script>
-      <script src="./js/components/regularJS.js"></script>
-    
-    <nav role='navigation' class='menu'>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Species Offered</a></li>
-        <li><a href="#">What to Bring</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
     <header>
-      <a href="#">Slime Time Guide Service</a>
-      <img src="..\assets\img\blackboatplaceholder.jpg" alt="">
-    </header>
+      <div class="logo">
+         <a href="index.html" class="name">
+           STGS
+         </a>
+      </div>
+      <div class="header-menu">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#filleting-services">Filleting Services</a>
+        <a href="index.html#species-offered">Species Offered</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#contact">Contact Us</a>
+      </div>
+      <div class="menu-btn">
+         <i class="fas fa-bars"></i>
+      </div>
+   </header>
+   <div class="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#filleting-services">Filleting Services</a>
+      <a href="index.html#species-offered">Species Offered</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#contact">Contact Us</a>
+   </div>
+    <div class="title">
+      <a href="index.html">Slime Time Guide Service</a>
+      <h3>No catch no pay guarentee! Free fish filleting offered at end of trip!</h1>
+      <div class = "img">
+        <img src="../assets/img/blackboatplaceholder.jpg">
+      </div>
+    </div>
     <section id="about">
       <div class="container">
         <div class="about-box">
           <h1>About</h1>
-          <p>Here at Slime Time we offer moer dollar for dollar than any other guide service On the lakes we target and species we specialize in. We offer trips 12 months out of the year, 7 days a wekk for multiple species and bodies of water. We back all that up with a <strong>No Catch No Pay Policy</strong> By us guarenteeing your success if the species of your choice does not cooperate or you are not fully satisfied at the end of the trip, you don't pay a dime!</p>
+          <p>Here at Slime Time we offer more, dollar for dollar than any other guide service On the lakes we target and species we specialize in. We offer trips 12 months out of the year, 7 days a week for multiple species and bodies of water. We back all that up with a <strong>No Catch No Pay Policy</strong> By us guarenteeing your success if the species of your choice does not cooperate or you are not fully satisfied at the end of the trip, you don't pay a dime!</p>
         </div>
       </div>
     </section>
     <section id="filleting-services">
-      <div class="text-box">
-        <h1>Filleting Services</h1>
-        <p>Fillet and bagging of your entire day';s catch at the end of your trip at no extra cost! We want to remove the thought and worry of spending money on booking a trip and coming home empty-handed. The optional free filleting and packaging of your day's catch is another benefit of choosing us. We offer this for our customers, especially those traveling long distances to fish with us and arriving with smaller vehicles that do not allow for larger coolers. We want you to head home after your day's trip without the mess and hassle of cleaning a full day's catch of fish when you get home. You can have four times the fish in a cooler half the size!</p>
-        <img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/15253507_112468785911289_1901857261043728432_n.jpg?_nc_cat=106&_nc_oc=AQkZ4R4XAVKD0uVJorVm9mZi0boXgKiGKY7PMciNjoVkRPNREaYxfotDc3ab0y7w2ys&_nc_ht=scontent-iad3-1.xx&oh=09e5bef8575527ca51d971c4d24dc358&oe=5DBFEC6A" alt="">
+      <div class="container">
+        <div class="text-box">
+          <h1>Filleting Services</h1>
+          <p>Fillet and bagging of your entire day's catch at the end of your trip at no extra cost! We want to remove the thought and worry of spending money on booking a trip and coming home empty-handed. The optional free filleting and packaging of your day's catch is another benefit of choosing us. We offer this for our customers, especially those traveling long distances to fish with us and arriving with smaller vehicles that do not allow for larger coolers. We want you to head home after your day's trip without the mess and hassle of cleaning a full day's catch of fish when you get home. You can have four times the fish in a cooler half the size!</p>
+        </div>
+        <div class=img-box>
+          <img src="..\assets\img\fishfilletpartyfeaturingalanandtheguts.jpg" alt="">
+        </div>
       </div>
     </section>
     <section id="species-offered">
@@ -69,5 +87,8 @@
         </div>
       </div>
     </section>
+
+    <script src="js/app.js"></script>
+
   </body>
 </html>
