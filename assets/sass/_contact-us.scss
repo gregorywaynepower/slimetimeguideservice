@@ -14,9 +14,10 @@ html{
             .container{
                 display: flex;
                 justify-content: center;
+                width: 100%;
                 .contact-box{
                     background: $boxcolor;
-                    width: 60%;
+                    width: 80%;
                     padding: 10px;
                     border-radius: 5px;
                     h1{
@@ -58,6 +59,7 @@ html{
         body{
             #contact{
                 .container{
+                    width: 100%;
                     .contact-box{
                         width: 80%;
                         box-sizing: content-box;
@@ -71,7 +73,6 @@ html{
                             padding: 0 5px 5px;
                             a{
                                 box-sizing: content-box;
-                                font-size: 1rem;
                                 padding: 10px 0 10px 0;
                             }
                         }
