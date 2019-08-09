@@ -35,4 +35,145 @@ html{
             }
         } 
     }
-}  
+}
+
+//Breakpoints Researched from Bulma.io (https://bulma.io/documentation/overview/responsiveness/)
+
+// Responsiveness Controls
+
+// Mobile Devices iPhone5/SE iPhone6/7/8/8 Plus
+@media only screen and (min-width: 320px) and (max-width:767px){
+    html{
+        body{
+            #about{
+                
+                .container{
+                    
+                    .about-box{
+                        margin: auto;
+                        width: 80%;
+                        h1{
+                            
+                        }
+                        p{
+                             
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+
+// Mobile Devices - (Also iPad Size)
+@media only screen and (min-width: 768px){
+    html{
+        body{
+            #about{
+                
+                .container{
+                    
+                    .about-box{
+                        
+                        h1{
+                            
+                        }
+                        p{
+                             
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+// Tablets Between 769px and 1023px
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+    html{
+        body{
+            #about{
+                
+                .container{
+                    
+                    .about-box{
+                        
+                        h1{
+                            
+                        }
+                        p{
+                             
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+
+// Desktop Between 1024px and 1215px
+@media only screen and (min-width: 1024px) and (max-width: 1215px){
+    html{
+        body{
+            #about{
+                
+                .container{
+
+                    .about-box{
+                        
+                        h1{
+                            
+                        }
+                        p{
+                             
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+
+// Widescreen between 1216px and 1407px
+@media only screen and (min-width: 1216px) and (max-width: 1407px){
+    html{
+        body{
+            #about{
+                
+                .container{
+                    
+                    .about-box{
+                        
+                        h1{
+                            
+                        }
+                        p{
+                             
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+// FullHD 1408px and above
+@media only screen and (min-width: 1408px){
+    html{
+        body{
+            #about{
+                
+                .container{
+                    
+                    .about-box{
+                        
+                        h1{
+                            
+                        }
+                        p{
+                             
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}

@@ -16,7 +16,10 @@ $subtextcolor: #21be0c;
   text-decoration: none;
 }
 body{
-  background: $backgroundcolor;
+  background: rgb(38,36,36); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(38,36,36,1) 1%, rgba(17,27,19,1) 100%, rgba(17,27,19,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(38,36,36,1) 1%,rgba(17,27,19,1) 100%,rgba(17,27,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(38,36,36,1) 1%,rgba(17,27,19,1) 100%,rgba(17,27,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   align-content: center;
   max-width: 1150px;
   margin: 0 auto;
@@ -184,6 +187,28 @@ header{
   }
   .mobile-menu.active{
 
+  }
+  .title{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    h1{
+      font-size: 1.55rem;
+      text-align: center;
+    }
+    a{
+      font-size: 1rem;
+      text-align: center;
+    }
+    a:hover{
+      
+    }
+    .img{
+      width: 70%;
+      img{
+        
+      }
+    }
   }
 }
 
