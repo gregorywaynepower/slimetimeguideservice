@@ -72,12 +72,14 @@ html{
                     .text-box{
                         border-radius: 5px;
                         display: flex;
-                        height: 50%;
+                        height: 600px;
+                        background: black;
                         h1{
                             
                         }
                         p{
-                            
+                            background: black;
+                            background-clip: border-box;
                         }
                     }
                     .img-box{
