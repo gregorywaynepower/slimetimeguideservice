@@ -1,0 +1,31 @@
+
+html{
+    body{
+        .calendar{
+            display: flex;
+            width: 80%;
+            .title-box{
+                padding: 10px;
+                h1{
+                    color: white;
+                }
+            }
+            .calendar-container{
+                text-align: center;
+                position: relative;
+                height: 0;
+                width: 100%;
+                padding-bottom: 85%;
+                overflow: hidden;
+
+                iframe{
+                    position: absolute !important; 
+                    top: 0 !important; 
+                    left: 0 !important;
+                    width: 100% !important;
+                    height: 100% !important;
+                }
+            }
+        }
+    }
+}
