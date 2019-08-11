@@ -1,13 +1,14 @@
 
 html{
     body{
-        .calendar{
+        #calendar{
             display: flex;
-            width: 80%;
+            flex-direction: column;
+            justify-content: center;
             .title-box{
                 padding: 10px;
                 h1{
-                    color: white;
+                    color: red;
                     font-size: 1.25rem;
                 }
             }
