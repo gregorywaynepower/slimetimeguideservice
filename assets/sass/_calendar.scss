@@ -1,14 +1,23 @@
+$backgroundcolor: rgb(17, 27, 19);
+$menu: rgb(17, 27, 19);
+$menubutton: #2cd816;
+$headercolor: #2cd816;
+$subtextcolor: #21be0c;
 
 html{
     body{
         #calendar{
+            width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             .title-box{
                 padding: 10px;
+                width: 80%;
+                margin: auto;
+                background: black;
+                text-align: center;
                 h1{
-                    color: red;
+                    color: $subtextcolor;
                     font-size: 1.25rem;
                 }
             }
@@ -16,10 +25,11 @@ html{
                 text-align: center;
                 position: relative;
                 height: 0;
-                width: 100%;
+                width: 80%;
                 padding-bottom: 85%;
                 overflow: hidden;
-
+                margin: auto;
+                margin-top: 30px;
                 iframe{
                     position: absolute !important; 
                     top: 0 !important; 
