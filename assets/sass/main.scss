@@ -1,15 +1,18 @@
 @import "reset";
+
+$backgroundcolor: rgb(17, 27, 19);
+$menu: rgb(17, 27, 19);
+$menubutton: #2cd816;
+$headercolor: #2cd816;
+$subtextcolor: #21be0c;
+$boxcolor: black;
+
 @import "about";
 @import "filleting-services";
 @import "species-offered";
 @import "calendar";
 @import "contact-us";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&display=swap');
-$backgroundcolor: rgb(17, 27, 19);
-$menu: rgb(17, 27, 19);
-$menubutton: #2cd816;
-$headercolor: #2cd816;
-$subtextcolor: #21be0c;
 
 
 *{
