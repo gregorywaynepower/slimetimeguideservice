@@ -12,3 +12,6 @@ window.addEventListener('mouseup', function(event) {
     }
   }
 });
+
+const magicBtn = document.getElementsByClassName('.far')
+

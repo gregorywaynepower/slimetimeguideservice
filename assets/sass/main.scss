@@ -1,10 +1,10 @@
 @import "reset";
 
-$backgroundcolor: rgb(17, 27, 19);
+$backgroundcolor: #ffffff;
 $menu: rgb(17, 27, 19);
-$menubutton: #2cd816;
-$headercolor: #2cd816;
-$subtextcolor: #21be0c;
+$menubutton: #ffffff;
+$headercolor: #ffffff;
+$subtextcolor: #ffffff;
 $boxcolor: black;
 
 @import "about";
@@ -31,13 +31,14 @@ body{
 
 header{
   display: flex;
-  padding: 20px;
   justify-content: space-between;
+  background: black;
+  border-bottom: solid 4px maroon;
   .logo{
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1 rem;
+    // font-weight: 700;
     text-transform: capitalize;
-    color: white;
+    color: red;
     display: flex;
     .name{
       background: black;
@@ -69,6 +70,7 @@ header{
     }
   }
   .menu-btn{
+    color: white;
     font-weight: 700;
     display: flex;
     justify-content: center;
@@ -79,6 +81,12 @@ header{
     background: $backgroundcolor;
     background: radial-gradient(circle, rgba(52,71,48,1) 10%, rgba(17, 27, 19,0) 46%);
     cursor: pointer;
+    .fas{
+
+    }
+    .far{
+      display: none;
+    }
   }
 }
 .mobile-menu{
