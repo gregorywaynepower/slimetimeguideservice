@@ -1,0 +1,394 @@
+@import "reset";
+
+$backgroundcolor: #ffffff;
+$menu: rgb(17, 27, 19);
+$menubutton: #ffffff;
+$headercolor: #ffffff;
+$subtextcolor: #ffffff;
+$boxcolor: black;
+
+@import "about";
+@import "filleting-services";
+@import "species-offered";
+@import "calendar";
+@import "contact-us";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  background: rgb(38,36,36); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(38,36,36,1) 1%, rgba(17,27,19,1) 100%, rgba(17,27,19,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(38,36,36,1) 1%,rgba(17,27,19,1) 100%,rgba(17,27,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(38,36,36,1) 1%,rgba(17,27,19,1) 100%,rgba(17,27,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  align-content: center;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  border-bottom: solid 4px maroon;
+  .logo{
+    font-size: 1 rem;
+    // font-weight: 700;
+    text-transform: capitalize;
+    display: flex;
+    .name{
+      background: black;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: $headercolor;
+    }
+  }
+  .header-menu{
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+      font-size: 1rem;
+      text-decoration: none;
+      color: $subtextcolor;
+      padding: 0 10px 0;
+      font-weight: 700;
+      border-radius: 1px;
+      transition: color 0.3s ease-in-out;
+    }
+    a:hover{
+      font-weight: 700;
+      color: rgb(237, 242, 245);
+    }
+  }
+  .menu-btn{
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 2rem;
+    display: none;
+    background: $backgroundcolor;
+    background: radial-gradient(circle, rgba(52,71,48,1) 10%, rgba(17, 27, 19,0) 46%);
+    cursor: pointer;
+    .fas{
+
+    }
+    .far{
+      display: none;
+    }
+  }
+}
+.mobile-menu{
+  display: none;
+  background: black;
+  flex-direction: column;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+  z-index: 10;
+  transform: translate3d(-100%, 0, 0);
+  transition: all 0.4s ease-in-out;
+  a{
+    padding: 15px;
+    text-decoration: none;
+    color: $subtextcolor;
+    transition: all 0.1s ease-in-out;
+  }
+  a:hover{
+    text-decoration: none;
+    color: rgb(237, 242, 245);
+  }
+}
+.mobile-menu.active{
+  transform: translate3d(0, 0, 0);
+  -webkit-box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
+  -moz-box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
+  box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0 10px;
+  font-size: 2rem;
+  h1{
+    color: $headercolor;
+    background: black;
+    padding: 20px;
+  }
+  a{
+    margin-top: 35px;
+    padding: 10px;
+    background: black;
+    color: #d8cdcd;
+    font-size: 1.25rem;
+  }
+  a:hover{
+    color: yellow;
+    transition: all 0.3s ease-in-out;
+  }
+  .img{
+    margin-top: 45px;
+    position: relative;
+    z-index: 1;
+    background: black;
+    width: 40%;
+    padding: 5px;
+    border-radius: 5px;
+    img{
+      border-radius: 5px;
+      margin-top: 3px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+//Breakpoints Researched from Bulma.io (https://bulma.io/documentation/overview/responsiveness/)
+
+// Responsiveness Controls
+
+// Mobile Devices iPhone5/SE iPhone6/7/8/8 Plus
+@media only screen and (min-width: 320px) and (max-width:767px){
+  header{
+    
+    .logo{
+      padding: 10px 15px;
+      font-size: 1.3rem;
+    }
+    .header-menu{
+      display: none;
+      a{
+        
+      }
+      a:hover{
+        
+      }
+    }
+    .menu-btn{
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      font-size: 1.8rem;
+    }
+  }
+  .mobile-menu{
+    display: flex;
+    a{
+      
+    }
+    a:hover{
+      
+    }
+  }
+  .mobile-menu.active{
+
+  }
+
+  
+
+  .title{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    h1{
+      font-size: 1.55rem;
+      text-align: center;
+    }
+    a{
+      font-size: 1rem;
+      text-align: center;
+    }
+    a:hover{
+      
+    }
+    .img{
+      width: 70%;
+      img{
+        
+      }
+    }
+  }
+}
+
+// Mobile Devices - (Also iPad Size)
+@media only screen and (min-width: 768px){
+  header{
+    
+    .logo{
+      padding: 10px 15px;
+      font-size: 1.3rem;
+    }
+    .header-menu{
+      display: none;
+      a{
+        
+      }
+      a:hover{
+        
+      }
+    }
+    .menu-btn{
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      font-size: 1.8rem;
+    }
+  }
+}
+// Tablets Between 769px and 1023px
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+  header{
+    
+    .logo{
+      
+    }
+    .header-menu{
+      font-size: 1rem;
+      text-decoration: none;
+      text-transform: capitalize;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: $subtextcolor;
+        padding: 0 10px 0;
+        font-weight: 700;
+        border-radius: 1px;
+        transition: color 0.3s ease-in-out;
+        transition: background 0.1s ease-in-out;
+      }
+      a:hover{
+        
+      }
+    }
+    .menu-btn{
+      display: none;
+    }
+  }
+}
+
+// Desktop Between 1024px and 1215px
+@media only screen and (min-width: 1024px) and (max-width: 1215px){
+  header{
+    
+    .logo{
+      
+    }
+    .header-menu{
+      font-size: 1rem;
+      text-decoration: none;
+      text-transform: capitalize;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: $subtextcolor;
+        padding: 0 10px 0;
+        font-weight: 700;
+        border-radius: 1px;
+        transition: color 0.3s ease-in-out;
+        transition: background 0.1s ease-in-out;
+      }
+      a:hover{
+        
+      }
+    }
+    .menu-btn{
+      display: none;
+    }
+  }
+}
+
+// Widescreen between 1216px and 1407px
+@media only screen and (min-width: 1216px) and (max-width: 1407px){
+  header{
+    
+    .logo{
+      
+    }
+    .header-menu{
+      font-size: 1rem;
+      text-decoration: none;
+      text-transform: capitalize;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: $subtextcolor;
+        padding: 0 10px 0;
+        font-weight: 700;
+        border-radius: 1px;
+        transition: color 0.3s ease-in-out;
+        transition: background 0.1s ease-in-out;
+      }
+      a:hover{
+        
+      }
+    }
+    .menu-btn{
+      display: none;
+    }
+  }
+}
+// FullHD 1408px and above
+@media only screen and (min-width: 1408px){
+  header{
+    
+    .logo{
+      
+    }
+    .header-menu{
+      font-size: 1rem;
+      text-decoration: none;
+      text-transform: capitalize;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: $subtextcolor;
+        padding: 0 10px 0;
+        font-weight: 700;
+        border-radius: 1px;
+        transition: color 0.3s ease-in-out;
+        transition: background 0.1s ease-in-out;
+      }
+      a:hover{
+        
+      }
+    }
+    .menu-btn{
+      display: none;
+    }
+  }
+}

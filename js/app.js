@@ -3,6 +3,8 @@ const mobileMenu = document.querySelector('.mobile-menu');
 
 const toggleMobileMenu = () => mobileMenu.classList.toggle('active');
 
+const magicBtn = document.getElementsByClassName('.far');
+
 menuBtn.addEventListener('click', toggleMobileMenu);
 
 window.addEventListener('mouseup', function(event) {
@@ -12,3 +14,5 @@ window.addEventListener('mouseup', function(event) {
     }
   }
 });
+
+
