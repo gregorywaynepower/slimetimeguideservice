@@ -149,7 +149,7 @@ html body #about .container {
 }
 
 html body #about .container .about-box {
-  background: black;
+  background: #F4F5F6;
   width: 80%;
   padding: 10px;
   border-radius: 5px;
@@ -158,12 +158,12 @@ html body #about .container .about-box {
 html body #about .container .about-box h1 {
   font-size: 1.25rem;
   padding: 10px;
-  color: #ffffff;
+  color: #354751;
 }
 
 html body #about .container .about-box p {
   padding: 0px 10px 10px;
-  color: #ffffff;
+  color: #425A68;
   line-height: 1.2;
   text-align: justify;
   text-justify: inter-word;
@@ -193,6 +193,7 @@ html body #filleting-services .container {
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   grid-gap: 0px;
+  background: #F4F5F6;
 }
 
 html body #filleting-services .container .text-box {
@@ -203,7 +204,7 @@ html body #filleting-services .container .text-box {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: black;
+  background: #F4F5F6;
   width: 100%;
   height: 100%;
   padding: 10px;
@@ -214,7 +215,7 @@ html body #filleting-services .container .text-box {
 html body #filleting-services .container .text-box h1 {
   font-size: 1.25rem;
   padding: 10px;
-  color: #ffffff;
+  color: #354751;
   margin-bottom: 10px;
 }
 
@@ -222,7 +223,7 @@ html body #filleting-services .container .text-box p {
   text-align: justify;
   text-justify: inter-word;
   padding: 0px 10px 10px;
-  color: #ffffff;
+  color: #425A68;
   line-height: 1.2;
 }
 
@@ -231,7 +232,7 @@ html body #filleting-services .container .img-box {
   display: -ms-flexbox;
   display: flex;
   padding: 5px;
-  background: black;
+  background: #F4F5F6;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -256,10 +257,10 @@ html body #filleting-services .container .img-box img {
     display: -ms-flexbox;
     display: flex;
     height: 600px;
-    background: black;
+    background: #F4F5F6;
   }
   html body #filleting-services .container .text-box p {
-    background: black;
+    background: #F4F5F6;
     background-clip: border-box;
   }
   html body #filleting-services .container .img-box {
@@ -294,7 +295,7 @@ html body #species-offered .container .title-box {
   position: relative;
   width: 80%;
   background: black;
-  color: #ffffff;
+  color: #354751;
   padding: 30px 0 30px;
   font-size: 1.25rem;
 }
@@ -413,7 +414,7 @@ html body #species-offered .container .card-container .maincontainer .thecard:ho
     position: relative;
     width: 50%;
     background: black;
-    color: #ffffff;
+    color: #354751;
     padding: 15px;
     font-size: 1.25rem;
   }
@@ -431,15 +432,16 @@ html body #calendar {
 }
 
 html body #calendar .title-box {
+  border-radius: 3px;
   padding: 10px;
   width: 80%;
   margin: auto;
-  background: black;
+  background: #F4F5F6;
   text-align: center;
 }
 
 html body #calendar .title-box h1 {
-  color: #ffffff;
+  color: #425A68;
   font-size: 1.25rem;
 }
 
@@ -478,7 +480,7 @@ html body #contact .container {
 }
 
 html body #contact .container .contact-box {
-  background: black;
+  background: #F4F5F6;
   width: 80%;
   padding: 10px;
   border-radius: 5px;
@@ -487,7 +489,7 @@ html body #contact .container .contact-box {
 html body #contact .container .contact-box h1 {
   font-size: 1.25rem;
   padding: 10px;
-  color: #ffffff;
+  color: #354751;
   margin-bottom: 10px;
 }
 
@@ -498,7 +500,7 @@ html body #contact .container .contact-box .email-box {
 html body #contact .container .contact-box .email-box a {
   font-size: 1rem;
   padding: 15px 0 15px 0;
-  color: #ffffff;
+  color: #354751;
   margin-bottom: 10px;
 }
 
@@ -509,7 +511,7 @@ html body #contact .container .contact-box .phone-booth {
 html body #contact .container .contact-box .phone-booth a {
   font-size: 1rem;
   padding: 15px 0 15px 0;
-  color: #ffffff;
+  color: #354751;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -551,12 +553,12 @@ html body #contact .container .contact-box .phone-booth a {
 }
 
 body {
-  background: #262424;
+  background: #feffff;
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #262424), color-stop(100%, #111b13), to(#111b13));
-  background: linear-gradient(to bottom, #262424 1%, #111b13 100%, #111b13 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#feffff), to(#5bc0f7));
+  background: linear-gradient(to bottom, #feffff 0%, #5bc0f7 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   -ms-flex-line-pack: center;
       align-content: center;
@@ -571,7 +573,13 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: black;
+  background: #feffff;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#feffff), to(#ebf2b8));
+  background: linear-gradient(to bottom, #feffff 0%, #ebf2b8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   border-bottom: solid 4px maroon;
 }
 
@@ -583,11 +591,22 @@ header .logo {
   display: flex;
 }
 
+header .logo .logo-img {
+  background-image: url("../img/fishskeleton-add-white-filter.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: auto;
+  width: 10vw;
+  background-color: red;
+}
+
 header .logo .name {
-  background: black;
   padding: 15px 20px;
   text-decoration: none;
-  color: #ffffff;
+  color: #354751;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
 
 header .header-menu {
@@ -608,7 +627,7 @@ header .header-menu {
 header .header-menu a {
   font-size: 1rem;
   text-decoration: none;
-  color: #ffffff;
+  color: #425A68;
   padding: 0 10px 0;
   font-weight: 700;
   border-radius: 1px;
@@ -618,11 +637,11 @@ header .header-menu a {
 
 header .header-menu a:hover {
   font-weight: 700;
-  color: #edf2f5;
+  color: #db4545;
 }
 
 header .menu-btn {
-  color: white;
+  color: maroon;
   font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -636,18 +655,30 @@ header .menu-btn {
   padding: 15px;
   font-size: 2rem;
   display: none;
-  background: #ffffff;
-  background: radial-gradient(circle, #344730 10%, rgba(17, 27, 19, 0) 46%);
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 header .menu-btn .far {
   display: none;
 }
 
+header .menu-btn:hover {
+  color: rgba(234, 125, 52, 0.496);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 .mobile-menu {
   display: none;
-  background: black;
+  background: #feffff;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#feffff), to(#ebf2b8));
+  background: linear-gradient(to bottom, #feffff 0%, #ebf2b8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -656,7 +687,7 @@ header .menu-btn .far {
   position: absolute;
   top: 0;
   height: 100vh;
-  width: 50%;
+  width: 70%;
   z-index: 10;
   -webkit-transform: translate3d(-100%, 0, 0);
           transform: translate3d(-100%, 0, 0);
@@ -667,14 +698,15 @@ header .menu-btn .far {
 .mobile-menu a {
   padding: 15px;
   text-decoration: none;
-  color: #ffffff;
+  color: #425A68;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+  border-bottom: solid 1px black;
 }
 
 .mobile-menu a:hover {
   text-decoration: none;
-  color: #edf2f5;
+  border-bottom: solid 1px maroon;
 }
 
 .mobile-menu.active {
@@ -682,6 +714,10 @@ header .menu-btn .far {
           transform: translate3d(0, 0, 0);
   -webkit-box-shadow: 2px 0px 75px -15px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 0px 75px -15px rgba(0, 0, 0, 0.5);
+}
+
+.mobile-menu.active a:hover {
+  color: rgba(234, 125, 52, 0.496);
 }
 
 .title {
@@ -703,7 +739,7 @@ header .menu-btn .far {
 }
 
 .title h1 {
-  color: #ffffff;
+  color: #354751;
   background: black;
   padding: 20px;
 }
@@ -726,8 +762,7 @@ header .menu-btn .far {
   margin-top: 45px;
   position: relative;
   z-index: 1;
-  background: black;
-  width: 40%;
+  width: 80%;
   padding: 5px;
   border-radius: 5px;
 }
@@ -826,7 +861,7 @@ header .menu-btn .far {
   header .header-menu a {
     font-size: 1rem;
     text-decoration: none;
-    color: #ffffff;
+    color: #425A68;
     padding: 0 10px 0;
     font-weight: 700;
     border-radius: 1px;
@@ -858,7 +893,7 @@ header .menu-btn .far {
   header .header-menu a {
     font-size: 1rem;
     text-decoration: none;
-    color: #ffffff;
+    color: #425A68;
     padding: 0 10px 0;
     font-weight: 700;
     border-radius: 1px;
@@ -890,7 +925,7 @@ header .menu-btn .far {
   header .header-menu a {
     font-size: 1rem;
     text-decoration: none;
-    color: #ffffff;
+    color: #425A68;
     padding: 0 10px 0;
     font-weight: 700;
     border-radius: 1px;
@@ -922,7 +957,7 @@ header .menu-btn .far {
   header .header-menu a {
     font-size: 1rem;
     text-decoration: none;
-    color: #ffffff;
+    color: #425A68;
     padding: 0 10px 0;
     font-weight: 700;
     border-radius: 1px;

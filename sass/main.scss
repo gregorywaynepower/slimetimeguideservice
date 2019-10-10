@@ -1,11 +1,14 @@
 @import "reset";
 
 $backgroundcolor: #ffffff;
-$menu: rgb(17, 27, 19);
+$menu: #ffffff;
 $menubutton: #ffffff;
-$headercolor: #ffffff;
-$subtextcolor: #ffffff;
-$boxcolor: black;
+$headercolor: rgb(53, 71, 81);
+$subtextcolor: #425A68;
+$boxcolor: #F4F5F6;
+$textHoverColor: #425A68;
+$menuTextHoverColor: rgb(219, 69, 69);
+$mobileMenuTextHoverColor: rgba(234, 125, 52, 0.496);
 
 @import "about";
 @import "filleting-services";
@@ -20,10 +23,10 @@ $boxcolor: black;
   text-decoration: none;
 }
 body{
-  background: rgb(38,36,36); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(38,36,36,1) 1%, rgba(17,27,19,1) 100%, rgba(17,27,19,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(38,36,36,1) 1%,rgba(17,27,19,1) 100%,rgba(17,27,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(38,36,36,1) 1%,rgba(17,27,19,1) 100%,rgba(17,27,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: rgb(254,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(91,192,247,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(91,192,247,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(91,192,247,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   align-content: center;
   max-width: 1150px;
   margin: 0 auto;
@@ -32,18 +35,31 @@ body{
 header{
   display: flex;
   justify-content: space-between;
-  background: black;
+  background: rgb(254,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(235,242,184,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(235,242,184,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(235,242,184,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   border-bottom: solid 4px maroon;
   .logo{
     font-size: 1 rem;
     // font-weight: 700;
     text-transform: capitalize;
     display: flex;
+    .logo-img{
+      background-image: url("../img/fishskeleton-add-white-filter.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      height: auto;
+      width: 10vw;
+      background-color: red;
+    }
     .name{
-      background: black;
       padding: 15px 20px;
       text-decoration: none;
       color: $headercolor;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
     }
   }
   .header-menu{
@@ -65,11 +81,11 @@ header{
     }
     a:hover{
       font-weight: 700;
-      color: rgb(237, 242, 245);
+      color: $menuTextHoverColor;
     }
   }
   .menu-btn{
-    color: white;
+    color: maroon;
     font-weight: 700;
     display: flex;
     justify-content: center;
@@ -77,26 +93,34 @@ header{
     padding: 15px;
     font-size: 2rem;
     display: none;
-    background: $backgroundcolor;
-    background: radial-gradient(circle, rgba(52,71,48,1) 10%, rgba(17, 27, 19,0) 46%);
+    // background: $backgroundcolor;
+    // background: radial-gradient(circle, rgba(52,71,48,1) 10%, rgba(17, 27, 19,0) 46%);
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
     .fas{
 
     }
     .far{
       display: none;
     }
+    &:hover{
+      color: $mobileMenuTextHoverColor;
+      transition: all 0.3s ease-in-out;
+    }
   }
 }
 .mobile-menu{
   display: none;
-  background: black;
+  background: rgb(254,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(235,242,184,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(235,242,184,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(235,242,184,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   flex-direction: column;
   padding: 15px;
   position: absolute;
   top: 0;
   height: 100vh;
-  width: 50%;
+  width: 70%;
   z-index: 10;
   transform: translate3d(-100%, 0, 0);
   transition: all 0.4s ease-in-out;
@@ -105,10 +129,12 @@ header{
     text-decoration: none;
     color: $subtextcolor;
     transition: all 0.1s ease-in-out;
+    border-bottom: solid 1px black;
   }
   a:hover{
     text-decoration: none;
-    color: rgb(237, 242, 245);
+    border-bottom: solid 1px
+    maroon;
   }
 }
 .mobile-menu.active{
@@ -116,6 +142,9 @@ header{
   -webkit-box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
   -moz-box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
   box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
+  a:hover{
+    color: $mobileMenuTextHoverColor;
+  }
 }
 
 .title{
@@ -145,8 +174,7 @@ header{
     margin-top: 45px;
     position: relative;
     z-index: 1;
-    background: black;
-    width: 40%;
+    width: 80%;
     padding: 5px;
     border-radius: 5px;
     img{
@@ -392,3 +420,4 @@ header{
     }
   }
 }
+
