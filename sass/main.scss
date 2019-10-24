@@ -247,9 +247,15 @@ header{
       
     }
     .img{
-      width: 70%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
       img{
         
+      }
+      .slide-video{
+        min-width:100%;
+        // min-height: 100%;
       }
     }
   }
