@@ -135,6 +135,7 @@ header{
     text-decoration: none;
     border-bottom: solid 1px
     maroon;
+    transition: all 0.1s ease-in-out;
   }
 }
 .mobile-menu.active{
@@ -142,13 +143,19 @@ header{
   -webkit-box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
   -moz-box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
   box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
+  a{
+    transition: all 0.3s ease-in-out;
+  }
   a:hover{
     color: $mobileMenuTextHoverColor;
+    background: maroon;
+    transition: all 0.3s ease-in-out;
   }
 }
 
 .title{
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -174,7 +181,7 @@ header{
     margin-top: 45px;
     position: relative;
     z-index: 1;
-    width: 80%;
+    width: 100%;
     padding: 5px;
     border-radius: 5px;
     img{
@@ -182,6 +189,10 @@ header{
       margin-top: 3px;
       width: 100%;
       height: 100%;
+    }
+    .slide-video{
+      width: 100%;
+      margin: 0px auto;
     }
   }
 }
