@@ -37,6 +37,15 @@ html{
                             color: $headercolor;
                         }
                     }
+                    .form{
+                        width: 100%;
+                        .fields{
+                            .field .half{
+                                width: 100%;
+                                background: green;
+                            }
+                        }
+                    }
                 }
             }
         } 
