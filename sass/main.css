@@ -854,7 +854,7 @@ header .menu-btn:hover {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 786px) {
   header .logo {
     padding: 10px 15px;
     font-size: 1.3rem;
@@ -973,6 +973,9 @@ header .menu-btn:hover {
   header .menu-btn {
     display: none;
   }
+  header .mobile-menu {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1216px) and (max-width: 1407px) {
@@ -1005,6 +1008,9 @@ header .menu-btn:hover {
   header .menu-btn {
     display: none;
   }
+  header .mobile-menu {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1408px) {
@@ -1035,6 +1041,9 @@ header .menu-btn:hover {
     transition: background 0.1s ease-in-out;
   }
   header .menu-btn {
+    display: none;
+  }
+  header .mobile-menu {
     display: none;
   }
 }

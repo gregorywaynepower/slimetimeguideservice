@@ -271,7 +271,7 @@ header{
 }
 
 // Mobile Devices - (Also iPad Size)
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) and (max-width: 786px){
   header{
     
     .logo{
@@ -410,6 +410,9 @@ header{
     .menu-btn{
       display: none;
     }
+    .mobile-menu{
+      display: none;
+    }
   }
 }
 
@@ -445,6 +448,9 @@ header{
     .menu-btn{
       display: none;
     }
+    .mobile-menu{
+      display: none;
+    }
   }
 }
 // FullHD 1408px and above
@@ -477,6 +483,9 @@ header{
       }
     }
     .menu-btn{
+      display: none;
+    }
+    .mobile-menu{
       display: none;
     }
   }
