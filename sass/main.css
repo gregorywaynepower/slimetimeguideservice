@@ -783,7 +783,7 @@ header .menu-btn:hover {
 
 .title .img {
   position: absolute;
-  max-width: 1158px;
+  max-width: 1150px;
   z-index: -1;
   top: 0;
   background-image: url(./img/firstFrameOfVideo.jpg);
@@ -846,7 +846,7 @@ header .menu-btn:hover {
   .title .img {
     width: 100%;
     position: absolute;
-    max-width: 1158px;
+    max-width: 1150px;
     z-index: -1;
     top: 10%;
     background-image: url(./img/firstFrameOfVideo.jpg);
@@ -943,7 +943,7 @@ header .menu-btn:hover {
   header .header-menu .img {
     width: 100%;
     position: absolute;
-    max-width: 1158px;
+    max-width: 1150px;
     z-index: -1;
     top: 8%;
     background-image: url(./img/firstFrameOfVideo.jpg);
