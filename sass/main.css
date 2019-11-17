@@ -876,6 +876,36 @@ header .menu-btn:hover {
     padding: 15px;
     font-size: 1.8rem;
   }
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .title {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .title h1 {
+    font-size: 1.55rem;
+    text-align: center;
+  }
+  .title a {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .title .img {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .title .img .slide-video {
+    min-width: 100%;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1023px) {

@@ -296,6 +296,49 @@ header{
       font-size: 1.8rem;
     }
   }
+  .mobile-menu{
+    display: flex;
+    a{
+      
+    }
+    a:hover{
+      
+    }
+  }
+  .mobile-menu.active{
+
+  }
+
+  
+
+  .title{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    h1{
+      font-size: 1.55rem;
+      text-align: center;
+    }
+    a{
+      font-size: 1rem;
+      text-align: center;
+    }
+    a:hover{
+      
+    }
+    .img{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      img{
+        
+      }
+      .slide-video{
+        min-width:100%;
+        // min-height: 100%;
+      }
+    }
+  }
 }
 // Tablets Between 769px and 1023px
 @media only screen and (min-width: 769px) and (max-width: 1023px){
