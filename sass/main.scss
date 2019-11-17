@@ -178,10 +178,12 @@ header{
     transition: all 0.3s ease-in-out;
   }
   .img{
-    margin-top: 45px;
-    position: relative;
-    z-index: 1;
-    width: 100%;
+    position: absolute;
+    max-width: 1158px;
+    z-index: -1;
+    top: 0;
+    background-image: url(./img/firstFrameOfVideo.jpg); background-repeat: no-repeat;
+    background-size: cover;
     img{
       border-radius: 5px;
       margin-top: 3px;
@@ -257,8 +259,12 @@ header{
     }
     .img{
       width: 100%;
-      display: flex;
-      justify-content: center;
+      position: absolute;
+      max-width: 1158px;
+      z-index: -1;
+      top: 10%;
+      background-image: url(./img/firstFrameOfVideo.jpg); background-repeat: no-repeat;
+      background-size: cover;
       img{
         
       }
@@ -330,6 +336,7 @@ header{
       width: 100%;
       display: flex;
       justify-content: center;
+      top: 7%;
       img{
         
       }
@@ -367,6 +374,15 @@ header{
       }
       a:hover{
         
+      }
+      .img{
+        width: 100%;
+        position: absolute;
+        max-width: 1158px;
+        z-index: -1;
+        top: 8%;
+        background-image: url(./img/firstFrameOfVideo.jpg); background-repeat: no-repeat;
+        background-size: cover;
       }
     }
     .menu-btn{

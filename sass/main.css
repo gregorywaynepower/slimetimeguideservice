@@ -782,10 +782,13 @@ header .menu-btn:hover {
 }
 
 .title .img {
-  margin-top: 45px;
-  position: relative;
-  z-index: 1;
-  width: 100%;
+  position: absolute;
+  max-width: 1158px;
+  z-index: -1;
+  top: 0;
+  background-image: url(./img/firstFrameOfVideo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title .img img {
@@ -842,12 +845,13 @@ header .menu-btn:hover {
   }
   .title .img {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    position: absolute;
+    max-width: 1158px;
+    z-index: -1;
+    top: 10%;
+    background-image: url(./img/firstFrameOfVideo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .title .img .slide-video {
     min-width: 100%;
@@ -902,6 +906,7 @@ header .menu-btn:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    top: 7%;
   }
   .title .img .slide-video {
     min-width: 100%;
@@ -934,6 +939,16 @@ header .menu-btn:hover {
     transition: color 0.3s ease-in-out;
     -webkit-transition: background 0.1s ease-in-out;
     transition: background 0.1s ease-in-out;
+  }
+  header .header-menu .img {
+    width: 100%;
+    position: absolute;
+    max-width: 1158px;
+    z-index: -1;
+    top: 8%;
+    background-image: url(./img/firstFrameOfVideo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   header .menu-btn {
     display: none;
