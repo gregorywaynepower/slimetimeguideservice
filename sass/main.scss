@@ -165,13 +165,15 @@ header{
     color: $headercolor;
     background: black;
     padding: 20px;
+    border-radius: 5px;
   }
   a{
     margin-top: 35px;
     padding: 10px;
-    background: black;
-    color: #d8cdcd;
+    color: white;
     font-size: 1.25rem;
+    font-weight: 800;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   a:hover{
     color: yellow;
