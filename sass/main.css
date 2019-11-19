@@ -153,6 +153,7 @@ html body #about .container .about-box {
   width: 80%;
   padding: 10px;
   border-radius: 5px;
+  max-width: 1150px;
 }
 
 html body #about .container .about-box h1 {
@@ -173,7 +174,6 @@ html body #about .container .about-box p {
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
   html body #about {
-    max-width: 1150px;
     margin-top: 21px;
   }
   html body #about .container .about-box {
@@ -193,7 +193,6 @@ html body #about .container .about-box p {
 }
 
 html body #filleting-services {
-  max-width: 1150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,6 +210,7 @@ html body #filleting-services .container {
       grid-template-columns: 50% 50%;
   grid-gap: 0px;
   background: #F4F5F6;
+  max-width: 1150px;
 }
 
 html body #filleting-services .container .text-box {
@@ -283,10 +283,6 @@ html body #filleting-services .container .img-box img {
   html body #filleting-services .container .img-box {
     border-radius: 5px;
   }
-}
-
-html body #species-offered {
-  max-width: 1150px;
 }
 
 html body #species-offered .container {
@@ -442,7 +438,6 @@ html body #species-offered .container .card-container .maincontainer .thecard:ho
 }
 
 html body #calendar {
-  max-width: 1150px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,6 +455,7 @@ html body #calendar .title-box {
   margin: auto;
   background: #F4F5F6;
   text-align: center;
+  max-width: 1150px;
 }
 
 html body #calendar .title-box h1 {
@@ -476,6 +472,7 @@ html body #calendar .calendar-container {
   overflow: hidden;
   margin: auto;
   margin-top: 30px;
+  max-width: 1150px;
 }
 
 html body #calendar .calendar-container iframe {
@@ -489,7 +486,6 @@ html body #calendar .calendar-container iframe {
 html body #contact {
   margin-top: 50px;
   margin-bottom: 30px;
-  max-width: 1150px;
 }
 
 html body #contact .container {
@@ -597,7 +593,6 @@ body {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   -ms-flex-line-pack: center;
       align-content: center;
-  max-width: 100%;
   margin: 0 auto;
 }
 

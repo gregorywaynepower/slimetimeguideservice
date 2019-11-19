@@ -12,6 +12,7 @@ html{
                 grid-template-columns: 50% 50%;
                 grid-gap: 0px;
                 background: $boxcolor;
+                max-width: 1150px;
                 .text-box{
                     display: flex;
                     flex-direction: column;

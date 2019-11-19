@@ -13,6 +13,7 @@ html{
                 margin: auto;
                 background: $boxcolor;
                 text-align: center;
+                max-width: 1150px;
                 h1{
                     color: $subtextcolor;
                     font-size: 1.25rem;
@@ -27,6 +28,7 @@ html{
                 overflow: hidden;
                 margin: auto;
                 margin-top: 30px;
+                max-width: 1150px;
                 iframe{
                     position: absolute !important; 
                     top: 0 !important; 
