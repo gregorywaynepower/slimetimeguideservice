@@ -169,11 +169,10 @@ header{
   }
   a{
     margin-top: 35px;
-    padding: 10px;
     color: white;
-    font-size: 1.25rem;
+    font-size: 3.25rem;
     font-weight: 800;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: 3px 3px black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   a:hover{
     color: yellow;
@@ -208,7 +207,7 @@ header{
   header{
     
     .logo{
-      padding: 10px 15px;
+      padding: 10px 10px;
       font-size: 1.3rem;
     }
     .header-menu{
@@ -253,7 +252,7 @@ header{
       text-align: center;
     }
     a{
-      font-size: 1rem;
+      font-size: 1.25rem;
       text-align: center;
     }
     a:hover{
@@ -264,7 +263,7 @@ header{
       position: absolute;
       max-width: 1150px;
       z-index: -1;
-      top: 10%;
+      top: 8.5%;
       background-image: url(./img/firstFrameOfVideo.jpg); background-repeat: no-repeat;
       background-size: cover;
       img{
@@ -328,7 +327,8 @@ header{
       text-align: center;
     }
     a{
-      font-size: 1rem;
+      margin: 148px 0px 140px 0px;
+      font-size: 3rem;
       text-align: center;
     }
     a:hover{
@@ -394,6 +394,20 @@ header{
       display: none;
     }
   }
+  .title{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    h1{
+      font-size: 1.55rem;
+      text-align: center;
+    }
+    a{
+      margin: 148px 0px 140px 0px;
+      font-size: 3rem;
+      text-align: center;
+    }
+  }
 }
 
 // Desktop Between 1024px and 1215px
@@ -430,6 +444,20 @@ header{
     }
     .mobile-menu{
       display: none;
+    }
+  }
+  .title{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    h1{
+      font-size: 1.55rem;
+      text-align: center;
+    }
+    a{
+      margin: 148px 0px 140px 0px;
+      font-size: 3rem;
+      text-align: center;
     }
   }
 }
@@ -470,6 +498,20 @@ header{
       display: none;
     }
   }
+  .title{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    h1{
+      font-size: 1.55rem;
+      text-align: center;
+    }
+    a{
+      margin: 148px 0px 140px 0px;
+      font-size: 3rem;
+      text-align: center;
+    }
+  }
 }
 // FullHD 1408px and above
 @media only screen and (min-width: 1408px){
@@ -505,6 +547,20 @@ header{
     }
     .mobile-menu{
       display: none;
+    }
+  }
+  .title{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    h1{
+      font-size: 1.55rem;
+      text-align: center;
+    }
+    a{
+      margin: 220px 0px 210px 0px;
+      font-size: 3rem;
+      text-align: center;
     }
   }
 }

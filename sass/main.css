@@ -157,19 +157,35 @@ html body #about .container .about-box {
 
 html body #about .container .about-box h1 {
   font-size: 1.25rem;
-  padding: 10px;
   color: #354751;
+  font-size: 1.25rem;
+  margin: 30px;
 }
 
 html body #about .container .about-box p {
   padding: 0px 10px 10px;
   color: #425A68;
-  line-height: 1.2;
+  line-height: 1.5;
   text-align: justify;
   text-justify: inter-word;
+  margin: 0px 30px 30px 30px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  html body #about {
+    max-width: 1150px;
+    margin-top: 21px;
+  }
+  html body #about .container .about-box {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  html body #about {
+    margin-top: 90px;
+  }
   html body #about .container .about-box {
     margin: auto;
     width: 80%;
@@ -177,6 +193,7 @@ html body #about .container .about-box p {
 }
 
 html body #filleting-services {
+  max-width: 1150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,6 +283,10 @@ html body #filleting-services .container .img-box img {
   html body #filleting-services .container .img-box {
     border-radius: 5px;
   }
+}
+
+html body #species-offered {
+  max-width: 1150px;
 }
 
 html body #species-offered .container {
@@ -421,6 +442,7 @@ html body #species-offered .container .card-container .maincontainer .thecard:ho
 }
 
 html body #calendar {
+  max-width: 1150px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,6 +489,7 @@ html body #calendar .calendar-container iframe {
 html body #contact {
   margin-top: 50px;
   margin-bottom: 30px;
+  max-width: 1150px;
 }
 
 html body #contact .container {
@@ -574,7 +597,7 @@ body {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   -ms-flex-line-pack: center;
       align-content: center;
-  max-width: 1150px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -770,11 +793,10 @@ header .menu-btn:hover {
 
 .title a {
   margin-top: 35px;
-  padding: 10px;
   color: white;
-  font-size: 1.25rem;
+  font-size: 3.25rem;
   font-weight: 800;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: 3px 3px black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .title a:hover {
@@ -807,7 +829,7 @@ header .menu-btn:hover {
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   header .logo {
-    padding: 10px 15px;
+    padding: 10px 10px;
     font-size: 1.3rem;
   }
   header .header-menu {
@@ -842,7 +864,7 @@ header .menu-btn:hover {
     text-align: center;
   }
   .title a {
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-align: center;
   }
   .title .img {
@@ -850,7 +872,7 @@ header .menu-btn:hover {
     position: absolute;
     max-width: 1150px;
     z-index: -1;
-    top: 10%;
+    top: 8.5%;
     background-image: url(./img/firstFrameOfVideo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -897,7 +919,8 @@ header .menu-btn:hover {
     text-align: center;
   }
   .title a {
-    font-size: 1rem;
+    margin: 148px 0px 140px 0px;
+    font-size: 3rem;
     text-align: center;
   }
   .title .img {
@@ -958,6 +981,20 @@ header .menu-btn:hover {
   header .mobile-menu {
     display: none;
   }
+  .title {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .title h1 {
+    font-size: 1.55rem;
+    text-align: center;
+  }
+  .title a {
+    margin: 148px 0px 140px 0px;
+    font-size: 3rem;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1215px) {
@@ -992,6 +1029,20 @@ header .menu-btn:hover {
   }
   header .mobile-menu {
     display: none;
+  }
+  .title {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .title h1 {
+    font-size: 1.55rem;
+    text-align: center;
+  }
+  .title a {
+    margin: 148px 0px 140px 0px;
+    font-size: 3rem;
+    text-align: center;
   }
 }
 
@@ -1028,6 +1079,20 @@ header .menu-btn:hover {
   header .mobile-menu {
     display: none;
   }
+  .title {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .title h1 {
+    font-size: 1.55rem;
+    text-align: center;
+  }
+  .title a {
+    margin: 148px 0px 140px 0px;
+    font-size: 3rem;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 1408px) {
@@ -1062,6 +1127,20 @@ header .menu-btn:hover {
   }
   header .mobile-menu {
     display: none;
+  }
+  .title {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .title h1 {
+    font-size: 1.55rem;
+    text-align: center;
+  }
+  .title a {
+    margin: 220px 0px 210px 0px;
+    font-size: 3rem;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
