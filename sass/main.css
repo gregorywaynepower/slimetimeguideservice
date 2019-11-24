@@ -289,6 +289,9 @@ html body #filleting-services .container .img-box img {
   html body #filleting-services .container .img-box {
     border-radius: 5px;
   }
+  html body #filleting-services .container .img-box img {
+    max-height: 50;
+  }
 }
 
 html body #species-offered .container {
