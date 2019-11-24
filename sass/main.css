@@ -287,8 +287,11 @@ html body #filleting-services .container .img-box img {
     background-clip: border-box;
   }
   html body #filleting-services .container .img-box {
-    background: red;
+    background: blue;
     border-radius: 5px;
+  }
+  html body #filleting-services .container .img-box img {
+    max-height: 386.66px;
   }
 }
 
