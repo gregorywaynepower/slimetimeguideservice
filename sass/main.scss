@@ -75,12 +75,12 @@ header{
       text-decoration: none;
       color: $subtextcolor;
       padding: 0 10px 0;
-      font-weight: 700;
+      font-weight: 500;
       border-radius: 1px;
       transition: color 0.3s ease-in-out;
     }
     a:hover{
-      font-weight: 700;
+      font-weight: 500;
       color: $menuTextHoverColor;
     }
   }
@@ -196,6 +196,18 @@ header{
       width: 100%;
       margin: 0px auto;
     }
+  }
+  .img:after{
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1150px;
+    background: rgba(0,0,0,0.35);
+    mix-blend-mode: multiply;
   }
 }
 
@@ -353,7 +365,8 @@ header{
 // Tablets Between 769px and 1023px
 @media only screen and (min-width: 769px) and (max-width: 1023px){
   header{
-    
+    position: sticky;
+    top: 0;
     .logo{
       
     }
@@ -370,7 +383,7 @@ header{
         text-decoration: none;
         color: $subtextcolor;
         padding: 0 10px 0;
-        font-weight: 700;
+        font-weight: 500;
         border-radius: 1px;
         transition: color 0.3s ease-in-out;
         transition: background 0.1s ease-in-out;
@@ -414,7 +427,8 @@ header{
 // Desktop Between 1024px and 1215px
 @media only screen and (min-width: 1024px) and (max-width: 1215px){
   header{
-    
+    position: sticky;
+    top: 0;
     .logo{
       
     }
@@ -431,7 +445,7 @@ header{
         text-decoration: none;
         color: $subtextcolor;
         padding: 0 10px 0;
-        font-weight: 700;
+        font-weight: 500;
         border-radius: 1px;
         transition: color 0.3s ease-in-out;
         transition: background 0.1s ease-in-out;
@@ -466,7 +480,8 @@ header{
 // Widescreen between 1216px and 1407px
 @media only screen and (min-width: 1216px) and (max-width: 1407px){
   header{
-    
+    position: sticky;
+    top: 0;
     .logo{
       
     }
@@ -483,7 +498,7 @@ header{
         text-decoration: none;
         color: $subtextcolor;
         padding: 0 10px 0;
-        font-weight: 700;
+        font-weight: 500;
         border-radius: 1px;
         transition: color 0.3s ease-in-out;
         transition: background 0.1s ease-in-out;
@@ -517,7 +532,8 @@ header{
 // FullHD 1408px and above
 @media only screen and (min-width: 1408px){
   header{
-    
+    position: sticky;
+    top: 0;
     .logo{
       
     }
@@ -534,7 +550,7 @@ header{
         text-decoration: none;
         color: $subtextcolor;
         padding: 0 10px 0;
-        font-weight: 700;
+        font-weight: 500;
         border-radius: 1px;
         transition: color 0.3s ease-in-out;
         transition: background 0.1s ease-in-out;
