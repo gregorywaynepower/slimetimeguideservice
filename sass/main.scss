@@ -132,7 +132,7 @@ header{
   a:hover{
     text-decoration: none;
     border-bottom: solid 1px
-    maroon;
+    #296a8d;
     transition: all 0.1s ease-in-out;
   }
 }
@@ -141,12 +141,13 @@ header{
   -webkit-box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
   -moz-box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
   box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
+  position: sticky;
   a{
     transition: all 0.3s ease-in-out;
   }
   a:hover{
     color: $mobileMenuTextHoverColor;
-    background: maroon;
+    background: #5bb5e7;
     transition: all 0.3s ease-in-out;
   }
 }

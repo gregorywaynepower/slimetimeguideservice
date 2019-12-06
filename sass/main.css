@@ -993,7 +993,7 @@ header .menu-btn:hover {
 
 .mobile-menu a:hover {
   text-decoration: none;
-  border-bottom: solid 1px maroon;
+  border-bottom: solid 1px #296a8d;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
@@ -1003,6 +1003,8 @@ header .menu-btn:hover {
           transform: translate3d(0, 0, 0);
   -webkit-box-shadow: 2px 0px 75px -15px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 0px 75px -15px rgba(0, 0, 0, 0.5);
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .mobile-menu.active a {
@@ -1012,7 +1014,7 @@ header .menu-btn:hover {
 
 .mobile-menu.active a:hover {
   color: #f5f235;
-  background: maroon;
+  background: #5bb5e7;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
