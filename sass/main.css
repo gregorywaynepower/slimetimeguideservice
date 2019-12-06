@@ -1003,8 +1003,6 @@ header .menu-btn:hover {
           transform: translate3d(0, 0, 0);
   -webkit-box-shadow: 2px 0px 75px -15px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 0px 75px -15px rgba(0, 0, 0, 0.5);
-  position: -webkit-sticky;
-  position: sticky;
 }
 
 .mobile-menu.active a {
