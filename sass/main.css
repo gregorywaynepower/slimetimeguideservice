@@ -870,14 +870,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #feffff;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#feffff), to(#ebf2b8));
-  background: linear-gradient(to bottom, #feffff 0%, #ebf2b8 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  border-bottom: solid 4px maroon;
+  background: #5bb5e7;
+  border-bottom: solid 2px #296a8d;
   position: relative;
   z-index: 4;
 }
@@ -903,7 +897,7 @@ header .logo .logo-img {
 header .logo .name {
   padding: 15px 20px;
   text-decoration: none;
-  color: #354751;
+  color: #f4f5f6;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
@@ -926,7 +920,7 @@ header .header-menu {
 header .header-menu a {
   font-size: 1rem;
   text-decoration: none;
-  color: #425A68;
+  color: #f4f5f6;
   padding: 0 10px 0;
   font-weight: 500;
   border-radius: 1px;
@@ -936,11 +930,11 @@ header .header-menu a {
 
 header .header-menu a:hover {
   font-weight: 500;
-  color: #db4545;
+  color: #f5f235;
 }
 
 header .menu-btn {
-  color: maroon;
+  color: #f4f5f6;
   font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -964,20 +958,14 @@ header .menu-btn .far {
 }
 
 header .menu-btn:hover {
-  color: rgba(234, 125, 52, 0.496);
+  color: #f5f235;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .mobile-menu {
   display: none;
-  background: #feffff;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#feffff), to(#ebf2b8));
-  background: linear-gradient(to bottom, #feffff 0%, #ebf2b8 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: #2578c3;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -997,7 +985,7 @@ header .menu-btn:hover {
 .mobile-menu a {
   padding: 15px;
   text-decoration: none;
-  color: #425A68;
+  color: #f4f5f6;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   border-bottom: solid 1px black;
@@ -1023,7 +1011,7 @@ header .menu-btn:hover {
 }
 
 .mobile-menu.active a:hover {
-  color: rgba(234, 125, 52, 0.496);
+  color: #f5f235;
   background: maroon;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -1238,7 +1226,7 @@ header .menu-btn:hover {
   header .header-menu a {
     font-size: 1rem;
     text-decoration: none;
-    color: #425A68;
+    color: #f4f5f6;
     padding: 0 10px 0;
     font-weight: 500;
     border-radius: 1px;

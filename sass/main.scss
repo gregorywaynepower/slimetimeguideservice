@@ -3,12 +3,13 @@
 $backgroundcolor: #ffffff;
 $menu: #ffffff;
 $menubutton: #ffffff;
+$menutextcolor: #f4f5f6;
 $headercolor: rgb(53, 71, 81);
 $subtextcolor: #425A68;
 $boxcolor: #F4F5F6;
 $textHoverColor: #425A68;
-$menuTextHoverColor: rgb(219, 69, 69);
-$mobileMenuTextHoverColor: rgba(234, 125, 52, 0.496);
+$menuTextHoverColor: rgb(245, 242, 53);
+$mobileMenuTextHoverColor: rgb(245, 242, 53);
 
 @import "about";
 @import "filleting-services";
@@ -36,11 +37,8 @@ body{
 header{
   display: flex;
   justify-content: space-between;
-  background: rgb(254,255,255); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(235,242,184,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(235,242,184,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(235,242,184,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  border-bottom: solid 4px maroon;
+  background: #5bb5e7;
+  border-bottom: solid 2px #296a8d;
   position: relative;
   z-index: 4;
   .logo{
@@ -60,7 +58,7 @@ header{
     .name{
       padding: 15px 20px;
       text-decoration: none;
-      color: $headercolor;
+      color: $menutextcolor;
       font-family: 'Roboto', sans-serif;
       font-weight: 700;
     }
@@ -76,7 +74,7 @@ header{
     a{
       font-size: 1rem;
       text-decoration: none;
-      color: $subtextcolor;
+      color: $menutextcolor;
       padding: 0 10px 0;
       font-weight: 500;
       border-radius: 1px;
@@ -88,7 +86,7 @@ header{
     }
   }
   .menu-btn{
-    color: maroon;
+    color: #f4f5f6;
     font-weight: 700;
     display: flex;
     justify-content: center;
@@ -114,10 +112,7 @@ header{
 }
 .mobile-menu{
   display: none;
-  background: rgb(254,255,255); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(235,242,184,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(235,242,184,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(235,242,184,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: #2578c3;
   flex-direction: column;
   padding: 15px;
   position: absolute;
@@ -130,7 +125,7 @@ header{
   a{
     padding: 15px;
     text-decoration: none;
-    color: $subtextcolor;
+    color: $menutextcolor;
     transition: all 0.1s ease-in-out;
     border-bottom: solid 1px black;
   }
@@ -384,7 +379,7 @@ header{
       a{
         font-size: 1rem;
         text-decoration: none;
-        color: $subtextcolor;
+        color: $menutextcolor;
         padding: 0 10px 0;
         font-weight: 500;
         border-radius: 1px;
