@@ -3,53 +3,6 @@ html {
     #contact {
       margin-top: 50px;
       margin-bottom: 30px;
-      // .container{
-      //     display: flex;
-      //     justify-content: center;
-      //     width: 100%;
-      //     .contact-box{
-      //         background: $boxcolor;
-      //         width: 80%;
-      //         padding: 10px;
-      //         border-radius: 5px;
-      //         h2{
-      //             font-size: 1.25rem;
-      //             padding: 10px;
-      //             color: $headercolor;
-      //             margin-bottom: 10px;
-      //         }
-      //         .email-box{
-      //             padding: 0 10px 10px;
-      //             a{
-      //                 font-size: 1rem;
-      //                 padding: 15px 0 15px 0;
-      //                 color: $headercolor;
-      //                 margin-bottom: 10px;
-      //             }
-      //         }
-      //         .phone-booth{
-      //             padding: 0 10px 10px;
-      //             a{
-      //                 font-size: 1rem;
-      //                 padding: 15px 0 15px 0;
-      //                 color: $headercolor;
-      //             }
-      //         }
-      //         .form{
-      //             width: 100%;
-      //             .fields{
-      //                 .field{
-      //                     label{
-      //                         color: #000000;
-      //                     }
-      //                     input{
-      //                         padding: 5px;
-      //                     }
-      //                 }
-      //             }
-      //         }
-      //     }
-      // }
       * {
         box-sizing: border-box;
       }
@@ -58,7 +11,6 @@ html {
         background: #92bde7;
         color: #485e74;
         line-height: 1.6;
-        //   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         padding: 1em;
       }
 
@@ -84,6 +36,10 @@ html {
           ul {
             text-align: center;
             margin: 0;
+          }
+          h3{
+            font-size: 1.50rem;
+            color: $headercolor;
           }
         }
         .contact {
@@ -132,7 +88,7 @@ html {
       /* LARGE SCREENS */
       @media (min-width: 700px) {
         .wrapper {
-          display: grid;
+          display: block;
           grid-template-columns: 1fr 2fr;
         }
         .wrapper > * {

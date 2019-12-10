@@ -464,6 +464,11 @@ html body #contact .wrapper .company-info ul {
   margin: 0;
 }
 
+html body #contact .wrapper .company-info h3 {
+  font-size: 1.50rem;
+  color: #354751;
+}
+
 html body #contact .wrapper .contact {
   background: #f9feff;
 }
@@ -521,8 +526,7 @@ html body #contact .wrapper > * {
 
 @media (min-width: 700px) {
   html body #contact .wrapper {
-    display: -ms-grid;
-    display: grid;
+    display: block;
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
   }
