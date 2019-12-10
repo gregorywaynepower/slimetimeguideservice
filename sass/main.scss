@@ -5,9 +5,9 @@ $menu: #ffffff;
 $menubutton: #ffffff;
 $menutextcolor: #f4f5f6;
 $headercolor: rgb(53, 71, 81);
-$subtextcolor: #425A68;
-$boxcolor: #F4F5F6;
-$textHoverColor: #425A68;
+$subtextcolor: #425a68;
+$boxcolor: #f4f5f6;
+$textHoverColor: #425a68;
 $menuTextHoverColor: rgb(245, 242, 53);
 $mobileMenuTextHoverColor: rgb(245, 242, 53);
 
@@ -16,37 +16,49 @@ $mobileMenuTextHoverColor: rgb(245, 242, 53);
 @import "species-offered";
 @import "calendar";
 @import "contact-us";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&display=swap");
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
-*{
+* {
   box-sizing: border-box;
   text-decoration: none;
 }
-body{
-  background: rgb(254,255,255); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(91,192,247,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(91,192,247,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(91,192,247,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+body {
+  background: rgb(254, 255, 255); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(254, 255, 255, 1) 0%,
+    rgba(91, 192, 247, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(254, 255, 255, 1) 0%,
+    rgba(91, 192, 247, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(254, 255, 255, 1) 0%,
+    rgba(91, 192, 247, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   align-content: center;
   // max-width: 1150px;
   margin: 0 auto;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   background: #5bb5e7;
   border-bottom: solid 2px #296a8d;
   position: relative;
   z-index: 4;
-  .logo{
+  .logo {
     font-size: 1 rem;
     // font-weight: 700;
     text-transform: capitalize;
     display: flex;
-    .logo-img{
+    .logo-img {
       background-image: url("../img/fishskeleton-add-white-filter.jpg");
       background-repeat: no-repeat;
       background-position: center center;
@@ -55,15 +67,15 @@ header{
       width: 10vw;
       background-color: red;
     }
-    .name{
+    .name {
       padding: 15px 20px;
       text-decoration: none;
       color: $menutextcolor;
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
       font-weight: 700;
     }
   }
-  .header-menu{
+  .header-menu {
     font-size: 1rem;
     text-decoration: none;
     text-transform: capitalize;
@@ -71,7 +83,7 @@ header{
     justify-content: center;
     align-items: center;
 
-    a{
+    a {
       font-size: 1rem;
       text-decoration: none;
       color: $menutextcolor;
@@ -80,12 +92,12 @@ header{
       border-radius: 1px;
       transition: color 0.3s ease-in-out;
     }
-    a:hover{
+    a:hover {
       font-weight: 500;
       color: $menuTextHoverColor;
     }
   }
-  .menu-btn{
+  .menu-btn {
     color: #f4f5f6;
     font-weight: 700;
     display: flex;
@@ -98,19 +110,18 @@ header{
     // background: radial-gradient(circle, rgba(52,71,48,1) 10%, rgba(17, 27, 19,0) 46%);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    .fas{
-
+    .fas {
     }
-    .far{
+    .far {
       display: none;
     }
-    &:hover{
+    &:hover {
       color: $mobileMenuTextHoverColor;
       transition: all 0.3s ease-in-out;
     }
   }
 }
-.mobile-menu{
+.mobile-menu {
   display: none;
   background: #2578c3;
   flex-direction: column;
@@ -122,36 +133,35 @@ header{
   z-index: 10;
   transform: translate3d(-100%, 0, 0);
   transition: all 0.4s ease-in-out;
-  a{
+  a {
     padding: 15px;
     text-decoration: none;
     color: $menutextcolor;
     transition: all 0.1s ease-in-out;
     border-bottom: solid 1px black;
   }
-  a:hover{
+  a:hover {
     text-decoration: none;
-    border-bottom: solid 1px
-    #296a8d;
+    border-bottom: solid 1px #296a8d;
     transition: all 0.1s ease-in-out;
   }
 }
-.mobile-menu.active{
+.mobile-menu.active {
   transform: translate3d(0, 0, 0);
-  -webkit-box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
-  -moz-box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
-  box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.50);
-  a{
+  -webkit-box-shadow: 2px 0px 75px -15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 0px 75px -15px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 0px 75px -15px rgba(0, 0, 0, 0.5);
+  a {
     transition: all 0.3s ease-in-out;
   }
-  a:hover{
+  a:hover {
     color: $mobileMenuTextHoverColor;
     background: #5bb5e7;
     transition: all 0.3s ease-in-out;
   }
 }
 
-.title{
+.title {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -159,24 +169,24 @@ header{
   flex-direction: column;
   padding: 20px 0 10px;
   font-size: 2rem;
-  h1{
+  h1 {
     color: $headercolor;
     background: black;
     padding: 20px;
     border-radius: 5px;
   }
-  a{
+  a {
     margin-top: 35px;
     color: white;
     font-size: 3.25rem;
     font-weight: 800;
     text-shadow: 3px 3px black, 0 1px black, 1px 0 black, 0 -1px black;
   }
-  a:hover{
+  a:hover {
     color: yellow;
     transition: all 0.3s ease-in-out;
   }
-  .img{
+  .img {
     position: absolute;
     max-width: 1150px;
     z-index: -1;
@@ -184,18 +194,18 @@ header{
     background-image: url(./img/firstFrameOfVideo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    img{
+    img {
       border-radius: 5px;
       margin-top: 3px;
       width: 100%;
       height: 100%;
     }
-    .slide-video{
+    .slide-video {
       width: 100%;
       margin: 0px auto;
     }
   }
-  .img:after{
+  .img:after {
     position: absolute;
     content: "";
     display: block;
@@ -204,7 +214,7 @@ header{
     height: 100%;
     width: 100%;
     max-width: 1150px;
-    background: rgba(0,0,0,0.35);
+    background: rgba(0, 0, 0, 0.35);
     mix-blend-mode: multiply;
   }
 }
@@ -214,23 +224,20 @@ header{
 // Responsiveness Controls
 
 // Mobile Devices iPhone5/SE iPhone6/7/8/8 Plus
-@media only screen and (min-width: 320px) and (max-width:767px){
-  header{
-    
-    .logo{
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  header {
+    .logo {
       padding: 10px 10px;
       font-size: 1.3rem;
     }
-    .header-menu{
+    .header-menu {
       display: none;
-      a{
-        
+      a {
       }
-      a:hover{
-        
+      a:hover {
       }
     }
-    .menu-btn{
+    .menu-btn {
       font-weight: 700;
       display: flex;
       justify-content: center;
@@ -239,49 +246,43 @@ header{
       font-size: 1.8rem;
     }
   }
-  .mobile-menu{
+  .mobile-menu {
     display: flex;
-    a{
-      
+    a {
     }
-    a:hover{
-      
+    a:hover {
     }
   }
-  .mobile-menu.active{
-
+  .mobile-menu.active {
   }
 
-  
-
-  .title{
+  .title {
     margin: auto;
     width: 80%;
     text-align: center;
-    h1{
+    h1 {
       font-size: 1.55rem;
       text-align: center;
     }
-    a{
+    a {
       font-size: 1.25rem;
       text-align: center;
     }
-    a:hover{
-      
+    a:hover {
     }
-    .img{
+    .img {
       width: 100%;
       position: absolute;
       max-width: 1150px;
       z-index: -1;
       top: 8.5%;
-      background-image: url(./img/firstFrameOfVideo.jpg); background-repeat: no-repeat;
+      background-image: url(./img/firstFrameOfVideo.jpg);
+      background-repeat: no-repeat;
       background-size: cover;
-      img{
-        
+      img {
       }
-      .slide-video{
-        min-width:100%;
+      .slide-video {
+        min-width: 100%;
         // min-height: 100%;
       }
     }
@@ -289,23 +290,20 @@ header{
 }
 
 // Mobile Devices - (Also iPad Size)
-@media only screen and (min-width: 768px) and (max-width: 786px){
-  header{
-    
-    .logo{
+@media only screen and (min-width: 768px) and (max-width: 786px) {
+  header {
+    .logo {
       padding: 10px 15px;
       font-size: 1.3rem;
     }
-    .header-menu{
+    .header-menu {
       display: none;
-      a{
-        
+      a {
       }
-      a:hover{
-        
+      a:hover {
       }
     }
-    .menu-btn{
+    .menu-btn {
       font-weight: 700;
       display: flex;
       justify-content: center;
@@ -314,69 +312,61 @@ header{
       font-size: 1.8rem;
     }
   }
-  .mobile-menu{
+  .mobile-menu {
     display: flex;
-    a{
-      
+    a {
     }
-    a:hover{
-      
+    a:hover {
     }
   }
-  .mobile-menu.active{
-
+  .mobile-menu.active {
   }
 
-  
-
-  .title{
+  .title {
     margin: auto;
     width: 100%;
     text-align: center;
-    h1{
+    h1 {
       font-size: 1.55rem;
       text-align: center;
     }
-    a{
+    a {
       margin: 148px 0px 140px 0px;
       font-size: 3rem;
       text-align: center;
     }
-    a:hover{
-      
+    a:hover {
     }
-    .img{
+    .img {
       width: 100%;
       display: flex;
       justify-content: center;
       top: 7%;
-      img{
-        
+      img {
       }
-      .slide-video{
-        min-width:100%;
+      .slide-video {
+        min-width: 100%;
         // min-height: 100%;
       }
     }
   }
 }
 // Tablets Between 769px and 1023px
-@media only screen and (min-width: 769px) and (max-width: 1023px){
-  header{
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  header {
     position: sticky;
     top: 0;
-    .logo{
-      
+    .logo {
     }
-    .header-menu{
+    .header-menu {
       font-size: 1rem;
       text-decoration: none;
       text-transform: capitalize;
       display: flex;
       justify-content: center;
       align-items: center;
-  
-      a{
+
+      a {
         font-size: 1rem;
         text-decoration: none;
         color: $menutextcolor;
@@ -386,35 +376,35 @@ header{
         transition: color 0.3s ease-in-out;
         transition: background 0.1s ease-in-out;
       }
-      a:hover{
-        
+      a:hover {
       }
-      .img{
+      .img {
         width: 100%;
         position: absolute;
         max-width: 1150px;
         z-index: -1;
         top: 8%;
-        background-image: url(./img/firstFrameOfVideo.jpg); background-repeat: no-repeat;
+        background-image: url(./img/firstFrameOfVideo.jpg);
+        background-repeat: no-repeat;
         background-size: cover;
       }
     }
-    .menu-btn{
+    .menu-btn {
       display: none;
     }
-    .mobile-menu{
+    .mobile-menu {
       display: none;
     }
   }
-  .title{
+  .title {
     margin: auto;
     width: 100%;
     text-align: center;
-    h1{
+    h1 {
       font-size: 1.55rem;
       text-align: center;
     }
-    a{
+    a {
       margin: 148px 0px 140px 0px;
       font-size: 3rem;
       text-align: center;
@@ -423,22 +413,21 @@ header{
 }
 
 // Desktop Between 1024px and 1215px
-@media only screen and (min-width: 1024px) and (max-width: 1215px){
-  header{
+@media only screen and (min-width: 1024px) and (max-width: 1215px) {
+  header {
     position: sticky;
     top: 0;
-    .logo{
-      
+    .logo {
     }
-    .header-menu{
+    .header-menu {
       font-size: 1rem;
       text-decoration: none;
       text-transform: capitalize;
       display: flex;
       justify-content: center;
       align-items: center;
-  
-      a{
+
+      a {
         font-size: 1rem;
         text-decoration: none;
         color: $menutextcolor;
@@ -448,26 +437,25 @@ header{
         transition: color 0.3s ease-in-out;
         transition: background 0.1s ease-in-out;
       }
-      a:hover{
-        
+      a:hover {
       }
     }
-    .menu-btn{
+    .menu-btn {
       display: none;
     }
-    .mobile-menu{
+    .mobile-menu {
       display: none;
     }
   }
-  .title{
+  .title {
     margin: auto;
     width: 100%;
     text-align: center;
-    h1{
+    h1 {
       font-size: 1.55rem;
       text-align: center;
     }
-    a{
+    a {
       margin: 148px 0px 140px 0px;
       font-size: 3rem;
       text-align: center;
@@ -476,22 +464,21 @@ header{
 }
 
 // Widescreen between 1216px and 1407px
-@media only screen and (min-width: 1216px) and (max-width: 1407px){
-  header{
+@media only screen and (min-width: 1216px) and (max-width: 1407px) {
+  header {
     position: sticky;
     top: 0;
-    .logo{
-      
+    .logo {
     }
-    .header-menu{
+    .header-menu {
       font-size: 1rem;
       text-decoration: none;
       text-transform: capitalize;
       display: flex;
       justify-content: center;
       align-items: center;
-  
-      a{
+
+      a {
         font-size: 1rem;
         text-decoration: none;
         padding: 0 10px 0;
@@ -500,26 +487,25 @@ header{
         transition: color 0.3s ease-in-out;
         transition: background 0.1s ease-in-out;
       }
-      a:hover{
-        
+      a:hover {
       }
     }
-    .menu-btn{
+    .menu-btn {
       display: none;
     }
-    .mobile-menu{
+    .mobile-menu {
       display: none;
     }
   }
-  .title{
+  .title {
     margin: auto;
     width: 100%;
     text-align: center;
-    h1{
+    h1 {
       font-size: 1.55rem;
       text-align: center;
     }
-    a{
+    a {
       margin: 148px 0px 140px 0px;
       font-size: 3rem;
       text-align: center;
@@ -527,22 +513,21 @@ header{
   }
 }
 // FullHD 1408px and above
-@media only screen and (min-width: 1408px){
-  header{
+@media only screen and (min-width: 1408px) {
+  header {
     position: sticky;
     top: 0;
-    .logo{
-      
+    .logo {
     }
-    .header-menu{
+    .header-menu {
       font-size: 1rem;
       text-decoration: none;
       text-transform: capitalize;
       display: flex;
       justify-content: center;
       align-items: center;
-  
-      a{
+
+      a {
         font-size: 1rem;
         text-decoration: none;
         color: $menutextcolor;
@@ -552,30 +537,28 @@ header{
         transition: color 0.3s ease-in-out;
         transition: background 0.1s ease-in-out;
       }
-      a:hover{
-        
+      a:hover {
       }
     }
-    .menu-btn{
+    .menu-btn {
       display: none;
     }
-    .mobile-menu{
+    .mobile-menu {
       display: none;
     }
   }
-  .title{
+  .title {
     margin: auto;
     width: 100%;
     text-align: center;
-    h1{
+    h1 {
       font-size: 1.55rem;
       text-align: center;
     }
-    a{
+    a {
       margin: 220px 0px 210px 0px;
       font-size: 3rem;
       text-align: center;
     }
   }
 }
-

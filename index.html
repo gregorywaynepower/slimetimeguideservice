@@ -1,148 +1,159 @@
 <!DOCTYPE html>
 <!-- Consider: https://html5up.net/twenty -->
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Slime Time Guide Service</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <script src="https://kit.fontawesome.com/32fecf8e5c.js"></script>
+    <link rel="stylesheet" href="./sass/main.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Slime Time Guide Service</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <script src="https://kit.fontawesome.com/32fecf8e5c.js"></script>
-  <link rel="stylesheet" href="./sass/main.css">
-</head>
-
-<body>
-  <header>
-    <div class="logo">
-      <a href="index.html" class="name">
-        Slime Time Guide Service
-      </a>
-    </div>
-    <div class="header-menu">
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html" class="name">
+          Slime Time Guide Service
+        </a>
+      </div>
+      <div class="header-menu">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">Who We Are</a>
+        <a href="index.html#species-offered">Fish You Can Catch</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#calendar">Check Availability</a>
+        <a href="index.html#contact">Schedule a Trip</a>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+        <i class="far fa-window-close"></i>
+      </div>
+    </header>
+    <div class="mobile-menu">
       <a href="index.html">Home</a>
       <a href="index.html#about">Who We Are</a>
+      <a href="index.html#filleting-services">Filleting Services</a>
       <a href="index.html#species-offered">Fish You Can Catch</a>
       <a href="index.html#pricing">Pricing</a>
       <a href="index.html#calendar">Check Availability</a>
       <a href="index.html#contact">Schedule a Trip</a>
     </div>
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
-      <i class="far fa-window-close"></i>
-    </div>
-  </header>
-  <div class="mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="index.html#about">Who We Are</a>
-    <a href="index.html#filleting-services">Filleting Services</a>
-    <a href="index.html#species-offered">Fish You Can Catch</a>
-    <a href="index.html#pricing">Pricing</a>
-    <a href="index.html#calendar">Check Availability</a>
-    <a href="index.html#contact">Schedule a Trip</a>
-  </div>
-  <div class="title">
-    <a href="index.html#calendar">Book your fishing trip today!</a>
-    <div class="img" style="position: absolute; z-index: -1; background-image: url(./img/firstFrameOfVideo.jpg); background-repeat: no-repeat; background-size: cover; width: 100vw;">
-      <video class="slide-video" autoplay loop muted id="video-background">
-        <source src="./assets/video/fishermanNet.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-  <section id="about">
-    <div class="container">
-      <div class="about-box">
-        <h1>Who We Are</h1>
-        <p>Here at Slime Time we offer more, dollar for dollar than any other guide service On the lakes we target and
-          species we specialize in. We offer trips 12 months out of the year, 7 days a week for multiple species and
-          bodies of water. We back all that up with a <strong>No Catch No Pay Policy</strong>. By us guarenteeing your
-          success if the species of your choice does not cooperate or you are not fully satisfied at the end of the
-          trip, you don't pay a dime!</p>
+    <div class="title">
+      <a href="index.html#calendar">Book your fishing trip today!</a>
+      <div
+        class="img"
+        style="position: absolute; z-index: -1; background-image: url(./img/firstFrameOfVideo.jpg); background-repeat: no-repeat; background-size: cover; width: 100vw;"
+      >
+        <video class="slide-video" autoplay loop muted id="video-background">
+          <source src="./assets/video/fishermanNet.mp4" type="video/mp4" />
+        </video>
       </div>
     </div>
-  </section>
-  <section id="filleting-services">
-    <div class="container">
-      <div class="text-box">
-        <h1>Filleting Services</h1>
-        <p>Fillet and bagging of your entire day's catch at the end of your trip at no extra cost! We want to remove the
-          thought and worry of spending money on booking a trip and coming home empty-handed. The optional free
-          filleting and packaging of your day's catch is another benefit of choosing us. We offer this for our
-          customers, especially those traveling long distances to fish with us and arriving with smaller vehicles that
-          do not allow for larger coolers. We want you to head home after your day's trip without the mess and hassle of
-          cleaning a full day's catch of fish when you get home. You can have four times the fish in a cooler half the
-          size!</p>
-      </div>
-      <div class=img-box>
-        <img src=".\img\fishfilletpartyfeaturingalanandtheguts.jpg" alt="">
-      </div>
-    </div>
-  </section>
-  <section id="destinations">
-    <div class="container">
-      
-    </div>
-  </section>
-  <section id="pricing">
-    <div class="container">
-
-    </div>
-  </section>
-
-  <section id="calendar">
-    <div class="title-box">
-      <h1>
-        Trip Availability Schedule
-      </h1>
-    </div>
-    <div class="calendar-container">
-      <iframe
-        src="https://calendar.google.com/calendar/embed?src=432p3joih2a4llfiurpc4glhlc%40group.calendar.google.com&ctz=America%2FNew_York"
-        style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="form-container">
-      <div class="wrapper animated bounceInLeft">
-        <div class="company-info">
-          <h3>Contact Us</h3>
-        </div>
-        <div class="contact">
-          <form method="POST" data-netlify="true">
-            <p>
-              <label>Name</label>
-              <input type="text" name="name">
-            </p>
-            <p>
-              <label>Party Size</label>
-              <input type="text" name="partySize">
-            </p>
-            <p>
-              <label>Email Address</label>
-              <input type="email" name="email">
-            </p>
-            <p>
-              <label>Phone Number</label>
-              <input type="text" name="phone">
-            </p>
-            <p class="full">
-              <label>Message</label>
-              <textarea name="message" rows="5"></textarea>
-            </p>
-            <p class="full">
-              <button type="submit">Submit</button>
-            </p>
-          </form>
+    <section id="about">
+      <div class="container">
+        <div class="about-box">
+          <h1>Who We Are</h1>
+          <p>
+            Here at Slime Time we offer more, dollar for dollar than any other
+            guide service On the lakes we target and species we specialize in.
+            We offer trips 12 months out of the year, 7 days a week for multiple
+            species and bodies of water. We back all that up with a
+            <strong>No Catch No Pay Policy</strong>. By us guarenteeing your
+            success if the species of your choice does not cooperate or you are
+            not fully satisfied at the end of the trip, you don't pay a dime!
+          </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section id="filleting-services">
+      <div class="container">
+        <div class="text-box">
+          <h1>Filleting Services</h1>
+          <p>
+            Fillet and bagging of your entire day's catch at the end of your
+            trip at no extra cost! We want to remove the thought and worry of
+            spending money on booking a trip and coming home empty-handed. The
+            optional free filleting and packaging of your day's catch is another
+            benefit of choosing us. We offer this for our customers, especially
+            those traveling long distances to fish with us and arriving with
+            smaller vehicles that do not allow for larger coolers. We want you
+            to head home after your day's trip without the mess and hassle of
+            cleaning a full day's catch of fish when you get home. You can have
+            four times the fish in a cooler half the size!
+          </p>
+        </div>
+        <div class="img-box">
+          <img src=".\img\fishfilletpartyfeaturingalanandtheguts.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="destinations">
+      <div class="container"></div>
+    </section>
+    <section id="pricing">
+      <div class="container"></div>
+    </section>
 
-  <footer>
+    <section id="calendar">
+      <div class="title-box">
+        <h1>
+          Trip Availability Schedule
+        </h1>
+      </div>
+      <div class="calendar-container">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=432p3joih2a4llfiurpc4glhlc%40group.calendar.google.com&ctz=America%2FNew_York"
+          style="border: 0"
+          width="800"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
+    </section>
 
-  </footer>
+    <section id="contact">
+      <div class="form-container">
+        <div class="wrapper animated bounceInLeft">
+          <div class="company-info">
+            <h3>Contact Us</h3>
+          </div>
+          <div class="contact">
+            <form method="POST" data-netlify="true">
+              <p>
+                <label>Name</label>
+                <input type="text" name="name" />
+              </p>
+              <p>
+                <label>Party Size</label>
+                <input type="text" name="partySize" />
+              </p>
+              <p>
+                <label>Email Address</label>
+                <input type="email" name="email" />
+              </p>
+              <p>
+                <label>Phone Number</label>
+                <input type="text" name="phone" />
+              </p>
+              <p class="full">
+                <label>Message</label>
+                <textarea name="message" rows="5"></textarea>
+              </p>
+              <p class="full">
+                <button type="submit">Submit</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script src="js/app.js"></script>
+    <footer></footer>
 
-</body>
-
+    <script src="js/app.js"></script>
+  </body>
 </html>
