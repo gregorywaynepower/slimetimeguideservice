@@ -339,6 +339,7 @@ html body #species-offered .container .title-box {
   color: #354751;
   padding: 30px 0 30px;
   margin-bottom: 10%;
+  max-width: 1150px;
 }
 
 html body #species-offered .container .title-box h1 {
