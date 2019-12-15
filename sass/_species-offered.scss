@@ -1,8 +1,18 @@
+$backgroundcolor: #ffffff;
+$menu: #ffffff;
+$menubutton: #ffffff;
+$menutextcolor: #f4f5f6;
+$headercolor: rgb(53, 71, 81);
+$subtextcolor: #425a68;
+$boxcolor: #f4f5f6;
+$textHoverColor: #425a68;
+$menuTextHoverColor: rgb(245, 242, 53);
+$mobileMenuTextHoverColor: rgb(245, 242, 53);
+
 html {
   body {
     #species-offered {
       .container {
-        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -15,15 +25,59 @@ html {
           background: $boxcolor;
           color: $headercolor;
           padding: 30px 0 30px;
-          margin-bottom: 10%;
+          margin-bottom: 30px;
           max-width: 1150px;
           h1 {
             font-size: 1.5rem;
           }
         }
+        .slider-container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80%;
+          max-width: 1150px;
+          margin-bottom: 30px;
+          .glide{
+            .glide__track{
+              .glide__slides{
+                .glide__slide{
+                  .fish-description{
+                    height: 100%;
+                    width: auto;
+                    padding: 10px;
+                    h2{
+                      font-size: 1.25rem;
+                      padding: 20px 20px 10px 40px;
+                      color: $headercolor;
+                    }
+                    p{
+                      text-align: justify;
+                      text-justify: inter-word;
+                      padding: 20px 40px 40px 40px;
+                      color: $subtextcolor;
+                      line-height: 1.50;
+                    }
+                  }
+                }
+              }
+            }
+            .glide__bullets{
+              button.glide__bullet{
+                border: 1px solid rgb(175, 173, 173);
+              }
+              &.glide__bullet--active{
+                background-color: rgb(175, 173, 173);
+              }
+            }
+          }
+        }
       }
     }
   }
+}
+#species-offered > div.container > div.slider-container > div.glide > div.glide__bullets > button.glide__bullet.glide__bullet--active{
+  background-color: rgb(175, 173, 173);
 }
 
 //Breakpoints Researched from Bulma.io (https://bulma.io/documentation/overview/responsiveness/)

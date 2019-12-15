@@ -19,10 +19,10 @@ $mobileMenuTextHoverColor: rgb(245, 242, 53);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&display=swap");
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
-
 * {
   box-sizing: border-box;
   text-decoration: none;
+
 }
 body {
   background: rgb(254, 255, 255); /* Old browsers */
@@ -42,7 +42,6 @@ body {
     rgba(91, 192, 247, 1) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   align-content: center;
-  // max-width: 1150px;
   margin: 0 auto;
 }
 
@@ -55,7 +54,6 @@ header {
   z-index: 4;
   .logo {
     font-size: 1 rem;
-    // font-weight: 700;
     text-transform: capitalize;
     display: flex;
     .logo-img {
@@ -106,8 +104,6 @@ header {
     padding: 15px;
     font-size: 2rem;
     display: none;
-    // background: $backgroundcolor;
-    // background: radial-gradient(circle, rgba(52,71,48,1) 10%, rgba(17, 27, 19,0) 46%);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     .fas {
