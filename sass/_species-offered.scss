@@ -31,42 +31,56 @@ html {
             font-size: 1.5rem;
           }
         }
-        .slider-container{
+        .slider-container {
           display: flex;
           justify-content: center;
           align-items: center;
           width: 80%;
           max-width: 1150px;
           margin-bottom: 30px;
-          .glide{
-            .glide__track{
-              .glide__slides{
-                .glide__slide{
-                  .fish-description{
-                    height: 100%;
+          .glide {
+            .glide__track {
+              .glide__slides {
+                .glide__slide {
+                  background: #f4f5f6 !important;
+                  height: auto !important;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;
+                  .fish-description {
+                    height: 70%;
                     width: auto;
-                    padding: 10px;
-                    h2{
+                    padding: 10px 10px 0px 10px;
+                    h2 {
                       font-size: 1.25rem;
                       padding: 20px 20px 10px 40px;
                       color: $headercolor;
                     }
-                    p{
+                    p {
                       text-align: justify;
                       text-justify: inter-word;
                       padding: 20px 40px 40px 40px;
                       color: $subtextcolor;
-                      line-height: 1.50;
+                      line-height: 1.5;
                     }
+                  }
+                  .fish-image{
+                    background: image();
+                  }
+                  img{
+                    padding-bottom: 30px;
+                    max-width: 100%;
+                    height: auto;
                   }
                 }
               }
             }
-            .glide__bullets{
-              button.glide__bullet{
+            .glide__bullets {
+              button.glide__bullet {
                 border: 1px solid rgb(175, 173, 173);
               }
-              &.glide__bullet--active{
+              &.glide__bullet--active {
                 background-color: rgb(175, 173, 173);
               }
             }
@@ -76,7 +90,12 @@ html {
     }
   }
 }
-#species-offered > div.container > div.slider-container > div.glide > div.glide__bullets > button.glide__bullet.glide__bullet--active{
+#species-offered
+  > div.container
+  > div.slider-container
+  > div.glide
+  > div.glide__bullets
+  > button.glide__bullet.glide__bullet--active {
   background-color: rgb(175, 173, 173);
 }
 
@@ -102,6 +121,58 @@ html {
               font-size: 1.5rem;
             }
           }
+          .slider-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            max-width: 1150px;
+            margin-bottom: 30px;
+            .glide {
+              .glide__track {
+                .glide__slides {
+                  .glide__slide {
+                    background: #f4f5f6 !important;
+                    height: auto !important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    .fish-description {
+                      height: 60%;
+                      width: auto;
+                      padding: 10px 10px 0px 10px;
+                      h2 {
+                        font-size: 1.25rem;
+                        padding: 20px 20px 10px 40px;
+                        color: $headercolor;
+                      }
+                      p {
+                        text-align: justify;
+                        text-justify: inter-word;
+                        padding: 20px 40px 40px 40px;
+                        color: $subtextcolor;
+                        line-height: 1.5;
+                      }
+                    }
+                    img{
+                      padding-bottom: 30px;
+                      max-width: 100%;
+                      height: auto;
+                    }
+                  }
+                }
+              }
+              .glide__bullets {
+                button.glide__bullet {
+                  border: 1px solid rgb(175, 173, 173);
+                }
+                &.glide__bullet--active {
+                  background-color: rgb(175, 173, 173);
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -116,6 +187,58 @@ html {
         .container {
           .title-box {
           }
+          .slider-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            max-width: 1150px;
+            margin-bottom: 30px;
+            .glide {
+              .glide__track {
+                .glide__slides {
+                  .glide__slide {
+                    background: #f4f5f6 !important;
+                    height: auto !important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    .fish-description {
+                      height: 60%;
+                      width: auto;
+                      padding: 10px 10px 0px 10px;
+                      h2 {
+                        font-size: 1.25rem;
+                        padding: 20px 20px 10px 40px;
+                        color: $headercolor;
+                      }
+                      p {
+                        text-align: justify;
+                        text-justify: inter-word;
+                        padding: 20px 40px 40px 40px;
+                        color: $subtextcolor;
+                        line-height: 1.5;
+                      }
+                    }
+                    img{
+                      padding-bottom: 30px;
+                      max-width: 100%;
+                      height: auto;
+                    }
+                  }
+                }
+              }
+              .glide__bullets {
+                button.glide__bullet {
+                  border: 1px solid rgb(175, 173, 173);
+                }
+                &.glide__bullet--active {
+                  background-color: rgb(175, 173, 173);
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -128,6 +251,58 @@ html {
       #species-offered {
         .container {
           .title-box {
+          }
+          .slider-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            max-width: 1150px;
+            margin-bottom: 30px;
+            .glide {
+              .glide__track {
+                .glide__slides {
+                  .glide__slide {
+                    background: #f4f5f6 !important;
+                    height: auto !important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    .fish-description {
+                      height: 70%;
+                      width: auto;
+                      padding: 10px 10px 0px 10px;
+                      h2 {
+                        font-size: 1.25rem;
+                        padding: 20px 20px 10px 40px;
+                        color: $headercolor;
+                      }
+                      p {
+                        text-align: justify;
+                        text-justify: inter-word;
+                        padding: 20px 40px 40px 40px;
+                        color: $subtextcolor;
+                        line-height: 1.5;
+                      }
+                    }
+                    img{
+                      padding: 1em;
+                      max-width: 100%;
+                      height: auto;
+                    }
+                  }
+                }
+              }
+              .glide__bullets {
+                button.glide__bullet {
+                  border: 1px solid rgb(175, 173, 173);
+                }
+                &.glide__bullet--active {
+                  background-color: rgb(175, 173, 173);
+                }
+              }
+            }
           }
         }
       }
@@ -143,6 +318,58 @@ html {
         .container {
           .title-box {
           }
+          .slider-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            max-width: 1150px;
+            margin-bottom: 30px;
+            .glide {
+              .glide__track {
+                .glide__slides {
+                  .glide__slide {
+                    background: #f4f5f6 !important;
+                    height: auto !important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    .fish-description {
+                      height: 70%;
+                      width: auto;
+                      padding: 10px 10px 0px 10px;
+                      h2 {
+                        font-size: 1.25rem;
+                        padding: 20px 20px 10px 40px;
+                        color: $headercolor;
+                      }
+                      p {
+                        text-align: justify;
+                        text-justify: inter-word;
+                        padding: 20px 40px 40px 40px;
+                        color: $subtextcolor;
+                        line-height: 1.5;
+                      }
+                    }
+                    img{
+                      padding: 1em;
+                      max-width: 100%;
+                      height: auto;
+                    }
+                  }
+                }
+              }
+              .glide__bullets {
+                button.glide__bullet {
+                  border: 1px solid rgb(175, 173, 173);
+                }
+                &.glide__bullet--active {
+                  background-color: rgb(175, 173, 173);
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -157,6 +384,58 @@ html {
         .container {
           .title-box {
           }
+          .slider-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            max-width: 1150px;
+            margin-bottom: 30px;
+            .glide {
+              .glide__track {
+                .glide__slides {
+                  .glide__slide {
+                    background: #f4f5f6 !important;
+                    height: auto !important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    .fish-description {
+                      height: 70%;
+                      width: auto;
+                      padding: 10px 10px 0px 10px;
+                      h2 {
+                        font-size: 1.25rem;
+                        padding: 20px 20px 10px 40px;
+                        color: $headercolor;
+                      }
+                      p {
+                        text-align: justify;
+                        text-justify: inter-word;
+                        padding: 20px 40px 40px 40px;
+                        color: $subtextcolor;
+                        line-height: 1.5;
+                      }
+                    }
+                    img{
+                      padding-bottom: 30px;
+                      max-width: 100%;
+                      height: auto;
+                    }
+                  }
+                }
+              }
+              .glide__bullets {
+                button.glide__bullet {
+                  border: 1px solid rgb(175, 173, 173);
+                }
+                &.glide__bullet--active {
+                  background-color: rgb(175, 173, 173);
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -169,6 +448,58 @@ html {
       #species-offered {
         .container {
           .title-box {
+          }
+          .slider-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            max-width: 1150px;
+            margin-bottom: 30px;
+            .glide {
+              .glide__track {
+                .glide__slides {
+                  .glide__slide {
+                    background: #f4f5f6 !important;
+                    height: auto !important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    .fish-description {
+                      height: 70%;
+                      width: auto;
+                      padding: 10px 10px 0px 10px;
+                      h2 {
+                        font-size: 1.25rem;
+                        padding: 20px 20px 10px 40px;
+                        color: $headercolor;
+                      }
+                      p {
+                        text-align: justify;
+                        text-justify: inter-word;
+                        padding: 20px 40px 40px 40px;
+                        color: $subtextcolor;
+                        line-height: 1.5;
+                      }
+                    }
+                    img{
+                      padding-bottom: 30px;
+                      max-width: 100%;
+                      height: auto;
+                    }
+                  }
+                }
+              }
+              .glide__bullets {
+                button.glide__bullet {
+                  border: 1px solid rgb(175, 173, 173);
+                }
+                &.glide__bullet--active {
+                  background-color: rgb(175, 173, 173);
+                }
+              }
+            }
           }
         }
       }
