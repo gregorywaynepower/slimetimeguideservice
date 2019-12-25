@@ -681,6 +681,7 @@ html body #species-offered .container .slider-container .glide .glide__bullets.g
   html body #species-offered .container .slider-container .glide .glide__track .glide__slides .glide__slide img {
     padding: 1em;
     max-width: 100%;
+    width: 50%;
     height: auto;
   }
   html body #species-offered .container .slider-container .glide .glide__bullets button.glide__bullet {
@@ -743,6 +744,7 @@ html body #species-offered .container .slider-container .glide .glide__bullets.g
   html body #species-offered .container .slider-container .glide .glide__track .glide__slides .glide__slide img {
     padding-bottom: 30px;
     max-width: 100%;
+    width: 50%;
     height: auto;
   }
   html body #species-offered .container .slider-container .glide .glide__bullets button.glide__bullet {
@@ -804,8 +806,10 @@ html body #species-offered .container .slider-container .glide .glide__bullets.g
   }
   html body #species-offered .container .slider-container .glide .glide__track .glide__slides .glide__slide img {
     padding-bottom: 30px;
+    padding-right: 44px;
     max-width: 100%;
     height: auto;
+    width: 50%;
   }
   html body #species-offered .container .slider-container .glide .glide__bullets button.glide__bullet {
     border: 1px solid #afadad;
