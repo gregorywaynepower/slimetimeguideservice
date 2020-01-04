@@ -595,13 +595,13 @@ html body #species-offered .container .slider-container .glide .glide__bullets.g
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   html body #species-offered .container .slider-container .glide .glide__track .glide__slides .glide__slide .fish-description {
-    height: 70%;
+    height: 60%;
     width: auto;
     padding: 10px 10px 0px 10px;
   }
@@ -618,10 +618,9 @@ html body #species-offered .container .slider-container .glide .glide__bullets.g
     line-height: 1.5;
   }
   html body #species-offered .container .slider-container .glide .glide__track .glide__slides .glide__slide img {
-    padding: 1em;
+    padding-bottom: 30px;
     max-width: 100%;
     height: auto;
-    width: 50%;
   }
   html body #species-offered .container .slider-container .glide .glide__bullets button.glide__bullet {
     border: 1px solid #afadad;

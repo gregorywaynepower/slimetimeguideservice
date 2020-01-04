@@ -269,9 +269,9 @@ html {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    flex-direction: row;
+                    flex-direction: column;
                     .fish-description {
-                      height: 70%;
+                      height: 60%;
                       width: auto;
                       padding: 10px 10px 0px 10px;
                       h2 {
@@ -288,10 +288,9 @@ html {
                       }
                     }
                     img{
-                      padding: 1em;
+                      padding-bottom: 30px;
                       max-width: 100%;
                       height: auto;
-                      width: 50%;
                     }
                   }
                 }
