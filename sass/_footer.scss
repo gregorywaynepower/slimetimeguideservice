@@ -16,6 +16,21 @@
 	margin: 0;
 }
 
+.footer-distributed .footer-left p a{
+	text-decoration: none;
+	color: #8f9296;
+    font-size: 14px;
+	margin: 0;
+}
+
+.footer-distributed .footer-left p a:nth-child(2){
+	cursor: pointer;
+}
+
+.footer-distributed .footer-left p a:hover{
+	color: #f3f6fa;
+}
+
 /* Footer links */
 
 .footer-distributed p.footer-links{
