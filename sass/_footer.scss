@@ -32,6 +32,9 @@
 	text-decoration: none;
 	color:  inherit;
 }
+.footer-distributed p.footer-links a:hover{
+	color:  $menuTextHoverColor;
+}
 
 .footer-distributed .footer-right{
 	float: right;
@@ -52,6 +55,14 @@
 	line-height: 35px;
 
 	margin-left: 3px;
+}
+
+.footer-distributed .footer-right a i{
+	cursor: pointer;
+}
+
+.footer-distributed .footer-right a i:hover{
+	color: $menuTextHoverColor;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */

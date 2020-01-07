@@ -1010,6 +1010,7 @@ html body #contact .wrapper .contact form button {
   text-transform: uppercase;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 html body #contact .wrapper .contact form button:hover,
@@ -1108,6 +1109,10 @@ html body #contact .wrapper > * {
   color: inherit;
 }
 
+.footer-distributed p.footer-links a:hover {
+  color: #f5f235;
+}
+
 .footer-distributed .footer-right {
   float: right;
   margin-top: 6px;
@@ -1125,6 +1130,14 @@ html body #contact .wrapper > * {
   text-align: center;
   line-height: 35px;
   margin-left: 3px;
+}
+
+.footer-distributed .footer-right a i {
+  cursor: pointer;
+}
+
+.footer-distributed .footer-right a i:hover {
+  color: #f5f235;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
