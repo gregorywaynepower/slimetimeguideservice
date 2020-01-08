@@ -914,6 +914,13 @@ html body #pricing .container .content-box {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  max-width: 1150px;
+  background: white;
+  padding: 10px;
 }
 
 html body #contact {

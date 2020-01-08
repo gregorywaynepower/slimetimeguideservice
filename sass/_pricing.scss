@@ -36,6 +36,36 @@ html {
         .content-box{
           display: flex;
           flex-direction: row;
+          justify-content: center;
+          width: 80%;
+          max-width: 1150px;
+          background: white;
+          padding: 10px;
+          .speciesAndLocationBox{
+            h3{
+              ul{
+                li{
+
+                }
+              }
+            }
+          }
+          .pricingTable{
+            thead{
+              tr{
+                th{
+
+                }
+              }
+            }
+            tbody{
+              tr{
+                td{
+                  
+                }
+              }
+            }
+          }
         }
       }
     }
