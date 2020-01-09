@@ -35,22 +35,28 @@ html {
         }
         .content-box{
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
           justify-content: center;
           width: 80%;
           max-width: 1150px;
           background: white;
           padding: 10px;
           .speciesAndLocationBox{
+            justify-content: center;
+            h2{
+              margin: 0.5rem;
+              text-align: center;
+            }
             h3{
-              ul{
-                li{
 
-                }
+            }
+            ul{
+              li{
+
               }
             }
           }
-          .pricingTable{
+          table{
             thead{
               tr{
                 th{
