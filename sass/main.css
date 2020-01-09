@@ -922,11 +922,21 @@ html body #pricing .container .content-box .speciesAndLocationBox {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 html body #pricing .container .content-box .speciesAndLocationBox h2 {
   margin: 0.5rem;
   text-align: center;
+}
+
+html body #pricing .container .content-box .speciesAndLocationBox h3 {
+  font-weight: 600;
+}
+
+html body #pricing .container .content-box table thead tr th {
+  font-weight: 600;
 }
 
 html body #contact {
