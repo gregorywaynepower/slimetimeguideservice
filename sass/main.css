@@ -916,6 +916,7 @@ html body #pricing .container .content-box {
   max-width: 1150px;
   background: white;
   padding: 10px;
+  margin-bottom: 1em;
 }
 
 html body #pricing .container .content-box .speciesAndLocationBox {
@@ -941,7 +942,7 @@ html body #pricing .container .content-box table thead tr th {
 }
 
 html body #contact {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 30px;
   /* LARGE SCREENS */
 }
