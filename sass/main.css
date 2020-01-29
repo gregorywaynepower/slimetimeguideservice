@@ -1672,9 +1672,8 @@ header .header-menu {
           align-items: center;
 }
 
-header .header-menu a {
+header .header-menu li {
   font-size: 1rem;
-  text-decoration: none;
   color: #f4f5f6;
   padding: 0 10px 0;
   font-weight: 500;
@@ -1682,7 +1681,11 @@ header .header-menu a {
   transition: color 0.3s ease-in-out;
 }
 
-header .header-menu a:hover {
+header .header-menu li a {
+  text-decoration: none;
+}
+
+header .header-menu li a:hover {
   font-weight: 500;
   color: #f5f235;
 }
@@ -1736,18 +1739,20 @@ header .menu-btn:hover {
   transition: all 0.4s ease-in-out;
 }
 
-.mobile-menu a {
-  padding: 15px;
-  text-decoration: none;
-  color: #f4f5f6;
+.mobile-menu li {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
-  border-bottom: solid 1px black;
+  padding: 10px;
 }
 
-.mobile-menu a:hover {
+.mobile-menu li a {
+  color: #f4f5f6;
+  padding: 15px;
   text-decoration: none;
-  border-bottom: solid 1px #296a8d;
+}
+
+.mobile-menu li a:hover {
+  text-decoration: none;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
@@ -1759,12 +1764,13 @@ header .menu-btn:hover {
   box-shadow: 2px 0px 75px -15px rgba(0, 0, 0, 0.5);
 }
 
-.mobile-menu.active a {
+.mobile-menu.active li a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
 }
 
-.mobile-menu.active a:hover {
+.mobile-menu.active li a:hover {
   color: #f5f235;
   background: #5bb5e7;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1975,7 +1981,7 @@ header .menu-btn:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  header .header-menu a {
+  header .header-menu li a {
     font-size: 1rem;
     text-decoration: none;
     color: #f4f5f6;
@@ -2038,7 +2044,7 @@ header .menu-btn:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  header .header-menu a {
+  header .header-menu li a {
     font-size: 1rem;
     text-decoration: none;
     color: #f4f5f6;
@@ -2091,7 +2097,7 @@ header .menu-btn:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  header .header-menu a {
+  header .header-menu li a {
     font-size: 1rem;
     text-decoration: none;
     padding: 0 10px 0;
@@ -2143,7 +2149,7 @@ header .menu-btn:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  header .header-menu a {
+  header .header-menu li a {
     font-size: 1rem;
     text-decoration: none;
     color: #f4f5f6;
