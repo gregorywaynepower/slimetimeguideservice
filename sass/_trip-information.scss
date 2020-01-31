@@ -36,12 +36,20 @@ html {
         .content-box {
           width: 80%;
           background: $boxcolor;
+          max-width: 1150px;
           ul {
             li {
               color: #425a68;
               line-height: 1.5;
               padding: 10px 30px;
               list-style: circle inside;
+              a {
+                font-weight: 500;
+                color: blue;
+                &:hover{
+                color: red;
+                }
+              }
               &.first{
                   padding-top: 30px;
               }
