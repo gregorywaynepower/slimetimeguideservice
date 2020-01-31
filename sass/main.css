@@ -941,6 +941,194 @@ html body #pricing .container .content-box table thead tr th {
   font-weight: 600;
 }
 
+html body #trip-information {
+  margin-top: 20px;
+}
+
+html body #trip-information .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body #trip-information .container .title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 80%;
+  background: #f4f5f6;
+  color: #354751;
+  padding: 30px 0 30px;
+  margin-bottom: 30px;
+  max-width: 1150px;
+}
+
+html body #trip-information .container .title-box h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+html body #trip-information .container .content-box {
+  width: 80%;
+  background: #f4f5f6;
+}
+
+html body #trip-information .container .content-box ul li {
+  color: #425a68;
+  line-height: 1.5;
+  padding: 10px 30px;
+  list-style: circle inside;
+}
+
+html body #trip-information .container .content-box ul li.first {
+  padding-top: 30px;
+}
+
+html body #trip-information .container .content-box ul li.last {
+  padding-bottom: 30px;
+}
+
+html body #trip-information .container .content-box ul li ul.inner li.inner {
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  html body #species-offered {
+    margin-top: 4.5rem;
+  }
+  html body #species-offered .container .title-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    width: 80%;
+    color: #354751;
+    padding: 15px;
+  }
+  html body #species-offered .container .title-box h1 {
+    font-size: 1.5rem;
+  }
+  html body #species-offered .container .content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    max-width: 1150px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html body #species-offered .container .content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    max-width: 1150px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  html body #species-offered .container .content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    max-width: 1150px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1215px) {
+  html body #species-offered .container .content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    max-width: 1150px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1216px) and (max-width: 1407px) {
+  html body #species-offered .container .content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    max-width: 1150px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1408px) {
+  html body #species-offered .container .content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    max-width: 1150px;
+    margin-bottom: 30px;
+  }
+}
+
 html body #contact {
   margin-top: 30px;
   margin-bottom: 30px;
