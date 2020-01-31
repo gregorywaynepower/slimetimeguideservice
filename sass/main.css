@@ -1221,10 +1221,27 @@ html body #contact .wrapper .contact form .full {
 
 html body #contact .wrapper .contact form button,
 html body #contact .wrapper .contact form input,
-html body #contact .wrapper .contact form textarea {
+html body #contact .wrapper .contact form textarea,
+html body #contact .wrapper .contact form select {
   width: 100%;
   padding: 1em;
   border: 1px solid #c9e6ff;
+}
+
+html body #contact .wrapper .contact form input:invalid, html body #contact .wrapper .contact form select:invalid {
+  border: 2px solid red;
+  -webkit-box-shadow: 0 0 5px 1px red;
+          box-shadow: 0 0 5px 1px red;
+}
+
+html body #contact .wrapper .contact form input:focus:invalid, html body #contact .wrapper .contact form select:focus:invalid {
+  border: 1px solid #c9e6ff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+html body #contact .wrapper .contact form input:focus, html body #contact .wrapper .contact form select:focus {
+  border: 1px solid #60c2f7;
 }
 
 html body #contact .wrapper .contact form button {

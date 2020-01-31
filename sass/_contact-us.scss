@@ -59,10 +59,22 @@ html {
             }
             button,
             input,
-            textarea {
+            textarea,
+            select {
               width: 100%;
               padding: 1em;
               border: 1px solid #c9e6ff;
+            }
+            input:invalid,select:invalid {
+              border: 2px solid red;
+              box-shadow: 0 0 5px 1px red;
+            }
+            input:focus:invalid,select:focus:invalid{
+              border: 1px solid #c9e6ff;
+              box-shadow: none;
+            }
+            input:focus,select:focus{
+              border: 1px solid #60c2f7;
             }
             button {
               background: #c9e6ff;
