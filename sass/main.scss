@@ -24,6 +24,8 @@ $mobileMenuTextHoverColor: rgb(245, 242, 53);
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/elements/table.sass";
+@import "../node_modules/photoswipe/src/css/main.scss";
+@import "../node_modules/photoswipe/src/css/default-skin/default-skin.scss";
 *{
   box-sizing: border-box;
   text-decoration: none;
