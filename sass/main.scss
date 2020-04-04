@@ -11,12 +11,14 @@ $textHoverColor: #425a68;
 $menuTextHoverColor: rgb(245, 242, 53);
 $mobileMenuTextHoverColor: rgb(245, 242, 53);
 
+@import "reset";
 @import "about";
 @import "filleting-services";
 @import "species-offered";
 @import "calendar";
 @import "pricing";
 @import "trip-information";
+@import "gallery";
 @import "contact-us";
 @import "footer";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&display=swap");
@@ -24,8 +26,6 @@ $mobileMenuTextHoverColor: rgb(245, 242, 53);
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/elements/table.sass";
-@import "../node_modules/photoswipe/src/css/main.scss";
-@import "../node_modules/photoswipe/src/css/default-skin/default-skin.scss";
 *{
   box-sizing: border-box;
   text-decoration: none;
