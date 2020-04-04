@@ -1332,7 +1332,6 @@ html body #gallery .container .gallery-box .image-container {
   height: 300px;
   width: 100%;
   max-width: 100%;
-  background: red;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1386,7 +1385,6 @@ html body #gallery .container .gallery-box .image-container.box7 {
     font-size: 1.5rem;
   }
   html body #gallery .container .gallery-box {
-    background: blue;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -1397,7 +1395,6 @@ html body #gallery .container .gallery-box .image-container.box7 {
     gap: 5px;
   }
   html body #gallery .container .gallery-box .image-container {
-    background: blue;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;

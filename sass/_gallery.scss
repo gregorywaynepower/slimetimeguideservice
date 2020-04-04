@@ -45,7 +45,7 @@ html {
               height: 300px;
               width: 100%;
               max-width: 100%;
-              background: red;
+            //   background: red;
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center center;
@@ -100,7 +100,7 @@ html {
             }
           }
           .gallery-box {
-            background: blue;
+            // background: blue;
             display: grid;
             grid-template-columns: 1fr;
             width: 80%;
@@ -108,7 +108,7 @@ html {
             margin-bottom: 30px;
             gap: 5px;
             .image-container{
-                background: blue;
+                // background: blue;
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center center;
