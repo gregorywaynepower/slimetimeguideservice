@@ -1338,31 +1338,32 @@ html body #gallery .container .gallery-box .image-container {
 }
 
 html body #gallery .container .gallery-box .image-container.box1 {
-  background-image: url("../assets/Alan_s Fish Pics/alan-fat-cat-2.jpg");
+  background-image: url("../assets/Alan_sFishPics/alan-fat-cat-2.jpg");
 }
 
 html body #gallery .container .gallery-box .image-container.box2 {
-  background-image: url("../assets/Alan_s Fish Pics/big-black-croppie.jpg");
+  background-image: url("../assets/Alan_sFishPics/big-black-croppie.jpg");
 }
 
 html body #gallery .container .gallery-box .image-container.box3 {
-  background-image: url("../assets/Alan_s Fish Pics/kid-fishing.jpeg");
+  background-image: url("../assets/Alan_sFishPics/kid-fishing.jpeg");
 }
 
 html body #gallery .container .gallery-box .image-container.box4 {
-  background-image: url("../assets/Alan_s Fish Pics/black-crappie.jpg");
+  background-image: url("../assets/Alan_sFishPics/black-crappie.jpg");
 }
 
 html body #gallery .container .gallery-box .image-container.box5 {
-  background-image: url("../assets/Alan_s Fish Pics/fat-cat-with-man.jpg");
+  background-image: url("../assets/Alan_sFishPics/fat-cat-with-man.jpg");
 }
 
 html body #gallery .container .gallery-box .image-container.box6 {
-  background-image: url("../assets/Alan_s Fish Pics/fat-cat-with-woman.jpg");
+  background-image: url("../assets/Alan_sFishPics/fat-cat-with-woman.jpg");
 }
 
 html body #gallery .container .gallery-box .image-container.box7 {
-  background-image: url("../assets/Alan_s Fish Pics/big-black-croppie.jpg");
+  background-image: url("../assets/Alan_sFishPics/fat-catfish-alan.jpeg");
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
